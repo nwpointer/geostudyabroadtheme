@@ -27,10 +27,10 @@ function program_search() {
   // ));
 
   loadjs(array(
-      '/js/libs/listjs/dist/list.js',
-      '/js/jquery.multiple-select.js',
-      '/js/cookies.js',
-      '/js/newProgram.js'
+      '/javascript/libs/listjs/dist/list.js',
+      '/javascript/jquery.multiple-select.js',
+      '/javascript/cookies.js',
+      '/javascript/newProgram.js'
   ));
 
   loadcss(array(
@@ -177,6 +177,7 @@ function program_search() {
     
     <div id="catagories">
       <select class="discipline_s" multiple data-placeholder="<span>Choose a </span> Subject">'. generateOptionHTML($disciplines) . '
+
       </select>
 
       <select class="country_s" multiple data-placeholder="<span>Choose a</span> country">'. generateOptionHTML($countries) . '
