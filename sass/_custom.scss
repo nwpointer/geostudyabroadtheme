@@ -19,6 +19,7 @@
 @import "forms/*";
 
 @import "_program";
+@import "_photo_gallery";
 @import "_breadcrumbs";
 @import "_form";
 @import "_taxonomyPage";
@@ -55,9 +56,6 @@ hr{
 	border: 1px solid rgb(244, 244, 238);
 }
 
-nav a {
-	text-transform: capitalize;
-}
 
 #main{
 	margin-bottom: 3rem;
