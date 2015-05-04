@@ -4,15 +4,15 @@
 
   <!-- ______________________ HEADER _______________________ -->
 
-  <header id="header">
-    <?php if($node->field_header_background["und"]): ?>
-      <div id="headerbackingwrapper">
+<?php if($node->field_header_background["und"]): ?>
       <?php 
-      $backgroundsrc = $node->field_header_background["und"][0]['uri']; 
+      $backgroundsrc = $node->field_header_background["und"][0]['uri'];
+      ?>
+  
+  <header id="header" style="background: url(<?php echo("'". file_create_url($backgroundsrc) . "'"); ?>);background-position: center center;background-size:cover;">
+      <?php
       print_r("<img id='headerbacking' src='" . file_create_url($backgroundsrc) . "'>" );
       ?>
-    
-      </div>
     <?php endif; ?>
     <div class="container">
 
