@@ -6,6 +6,16 @@ $headerHeight : 9rem;
 	opacity: 0;
 }
 
+#leaderImage{
+	max-width: 100%;
+	margin-top:4rem;
+}
+
+.front #header{
+	min-height: 40vh;
+	max-height: initial;
+}
+
 #header{
 	overflow: hidden;
 	max-height: 40vh;

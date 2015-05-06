@@ -61,6 +61,20 @@ jQuery("#secondary-menu").toggle();});
       <?php endif; ?>
 
       <div class="explore">
+        <?php if (theme_get_setting('leader_image')): ?>
+          <p>
+            <?php 
+              $fid = theme_get_setting('leader_image');
+              $image_url = file_create_url(file_load($fid)->uri);
+              print ("<img src=". $image_url . " id='leaderImage'></img>");
+            ?>
+          </p>
+        <?php endif; ?>
+        <?php if (theme_get_setting('header_text')): ?>
+          <p>
+            <?php print_r(theme_get_setting('header_text')) ?>
+          </p>
+        <?php endif; ?>
         <form onsubmit="return explore()">
           <input type="text" placeholder="search">
           <input  type="submit">

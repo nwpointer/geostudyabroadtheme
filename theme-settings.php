@@ -93,6 +93,21 @@ function basic_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' =>t('During theme development, it can be very useful to continuously <a href="!link">rebuild the theme registry</a>. WARNING: this is a huge performance penalty and must be turned off on production websites.', array('!link' => 'http://drupal.org/node/173880#theme-registry')),
     '#default_value' => theme_get_setting('clear_registry'),
   );
+  $form['leader_image'] = array(
+    '#type'     => 'managed_file',
+    '#title'    => t('Background'),
+    '#required' => FALSE,
+    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
+    '#default_value' => theme_get_setting('leader_image'), 
+    '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg'),
+    ),
+  );
+  $form['header_text'] = array(
+    '#type' => 'textfield',
+    "#title" => t('header text'),
+    '#default_value' =>  theme_get_setting('header_text'),
+  );
 }
 
 

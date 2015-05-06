@@ -10,14 +10,7 @@
       ?>
   
   <header id="header" style="background: url(<?php echo("'". file_create_url($backgroundsrc) . "'"); ?>);background-position: center center;background-size:cover;">
-      <?php
-      print_r("<img id='headerbacking' src='" . file_create_url($backgroundsrc) . "'>" );
-      ?>
-    <?php endif; ?>
     <div class="container">
-
-    
-
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
@@ -84,6 +77,10 @@ jQuery("#secondary-menu").toggle();});
       </div>
       
     </div>
+    <?php
+      print_r("<img id='headerbacking' src='" . file_create_url($backgroundsrc) . "'>" );
+      ?>
+    <?php endif; ?>
 
   </header> <!-- /header -->
 
