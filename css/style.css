@@ -1421,15 +1421,29 @@ html, body .front {
   line-height: 4rem;
 }
 
-/* line 200, ../sass/_custom.scss */
-.view-scholarships-for-uo-students- td, .view-uo-departmental-scholarships td {
+/* line 201, ../sass/_custom.scss */
+.view-scholarships-for-uo-students- td, .view-uo-departmental-scholarships td, .view-display-id-block td {
   padding-bottom: 1rem;
   padding-top: 2rem;
   padding-right: 1.25rem;
 }
 
-/* line 207, ../sass/_custom.scss */
+/* line 213, ../sass/_custom.scss */
 .view-scholarships-for-uo-students- .views-field-title a,
-.view-uo-departmental-scholarships .views-field-title a {
+.view-uo-departmental-scholarships .views-field-title a,
+.view-display-id-block .views-field-title a {
   font-weight: 900;
+}
+
+/* line 217, ../sass/_custom.scss */
+[class*="excursions"] .views-field-title a {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+/* line 224, ../sass/_custom.scss */
+[class*="excursions"] .views-field-body a {
+  max-width: 350px;
 }

@@ -197,15 +197,30 @@ html, body .front{
 	line-height: 4rem;
 }
 
-.view-scholarships-for-uo-students- td, .view-uo-departmental-scholarships td{
-	padding-bottom: 1rem;
-  padding-top: 2rem;
-  padding-right: 1.25rem;
+.view-scholarships-for-uo-students-, .view-uo-departmental-scholarships, .view-display-id-block{
+  td{
+	  padding-bottom: 1rem;
+	  padding-top: 2rem;
+	  padding-right: 1.25rem;
+  }
 }
 
 
-.view-scholarships-for-uo-students- .views-field-title a,
-.view-uo-departmental-scholarships .views-field-title a
+.view-scholarships-for-uo-students-,
+.view-uo-departmental-scholarships,
+.view-display-id-block
 {
-	font-weight: 900;
+	.views-field-title a {font-weight: 900;}
+}
+
+
+[class*="excursions"] .views-field-title a {
+	font-size: 1.25rem;
+  padding-top: 1rem;
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+[class*="excursions"] .views-field-body a {
+	max-width:350px;
 }
