@@ -244,7 +244,7 @@ jQuery("#secondary-menu").toggle();});
 
       favoritesList = new persistantList({
           el: '#favorites-list',
-          template : "<h4>favorited programs</h4>{{#each favorites: i}}{{>item}}{{/each}}",
+          template : "<h4>favorites</h4>{{#each favorites: i}}{{>item}}{{/each}}",
           add: function(fav){
               this.get("favorites").push(fav);
               this.toggle('includesThisPage');
