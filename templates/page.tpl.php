@@ -1,11 +1,38 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+
+
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <!-- ______________________ HEADER _______________________ -->
 
 
   <header id="header">
+    <?php if (drupal_is_front_page()): ?>
+    <div class="hero-slider">
+          <ul class="rslides">
+            <li>
+              <?php if (theme_get_setting('background_image1')): ?>
+                <?php 
+                  $fid = theme_get_setting('background_image1');
+                  $image_url = file_create_url(file_load($fid)->uri);
+                  print ("<img src=". $image_url . "></img>");
+                ?>
+              <?php endif; ?> 
+            </li>
+            <li>
+              <?php if (theme_get_setting('background_image2')): ?>
+                  <?php 
+                    $fid = theme_get_setting('background_image2');
+                    $image_url = file_create_url(file_load($fid)->uri);
+                    print ("<img src=". $image_url . "></img>");
+                  ?>
+              <?php endif; ?>
+            </li>
+          </ul>
+    </div>
+    <?php endif; ?>
+
     <div class="container">
 
       <?php if ($logo): ?>

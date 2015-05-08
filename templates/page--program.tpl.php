@@ -10,6 +10,7 @@
       ?>
   
   <header id="header" style="background: url(<?php echo("'". file_create_url($backgroundsrc) . "'"); ?>);background-position: center center;background-size:cover;">
+
     <div class="container">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">

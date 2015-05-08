@@ -16,6 +16,13 @@ $headerHeight : 9rem;
 #leaderImage{
 	max-width: 100%;
 	margin-top:4rem;
+	z-index: 1;
+	position: relative;
+}
+
+#logo{
+	position: relative;
+	z-index: 1;
 }
 
 .front #header{
@@ -28,12 +35,64 @@ $headerHeight : 9rem;
 	// top:-2rem;
 	// 
 	margin-bottom: 3rem;
+	position: relative;
+	z-index: 1;
 }
 .explore input{
 	height: 3.0rem;
 	line-height: 3.0rem;
 	padding: 0 1.75rem;
 }
+
+
+.hero-slider{
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	z-index: 0;
+	// background: red;
+	img{
+		min-height: 110vh;
+		min-width: 100%;
+	}
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  min-height: 110vh;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+ min-height: 110vh;
+min-width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  // width: 100%;
+  border: 0;
+  }
+
+
+
 
 
 #header{
