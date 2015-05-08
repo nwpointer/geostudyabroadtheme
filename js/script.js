@@ -40,7 +40,7 @@ function hideGraduats($){
 		hideGraduats($);
 		$(".rslides").responsiveSlides({
 			auto: true,
-			speed: 500,   
+			speed: 700,   
 		});
 
 		// toggle main menu
