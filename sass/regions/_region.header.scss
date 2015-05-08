@@ -52,8 +52,8 @@ $headerHeight : 9rem;
 	z-index: 0;
 	// background: red;
 	img{
-		min-height: 100vh;
-		min-width: 100%;
+		// min-height: 100vh;
+		// min-width: 100%;
 	}
 }
 
@@ -72,7 +72,7 @@ $headerHeight : 9rem;
   position: absolute;
   display: none;
 //  min-height: 100vh;
-min-width: 100%;
+	min-width: 100%;
   left: 0;
   top: 0;
   }
@@ -87,7 +87,8 @@ min-width: 100%;
   display: block;
   height: auto;
   float: left;
-  // width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
   border: 0;
   }
 

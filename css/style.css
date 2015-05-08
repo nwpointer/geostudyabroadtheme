@@ -312,11 +312,6 @@ div.status {
   position: absolute;
   z-index: 0;
 }
-/* line 54, ../sass/regions/_region.header.scss */
-.hero-slider img {
-  min-height: 100vh;
-  min-width: 100%;
-}
 
 /* line 60, ../sass/regions/_region.header.scss */
 .rslides {
@@ -349,10 +344,12 @@ div.status {
   display: block;
   height: auto;
   float: left;
+  min-width: 100%;
+  min-height: 100vh;
   border: 0;
 }
 
-/* line 98, ../sass/regions/_region.header.scss */
+/* line 99, ../sass/regions/_region.header.scss */
 #header {
   overflow: hidden;
   max-height: 25vh;
@@ -365,21 +362,21 @@ div.status {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg"), url("https://photos-3.dropbox.com/t/2/AACL0DK6LBdxrObOfOMEyB3b7w8ys3dHs9PdkLJ8Q_P7_w/12/291310503/jpeg/32x32/3/_/1/2/evening-forest-landscape-397.jpg/CKeX9IoBIAEgAiADKAEoAg/HWNUb16wkDlWf6yKu0uJI349kkGqwXNi4subOah9kqM?size=1280x960");
 }
 @media screen and (max-width: 480px) {
-  /* line 98, ../sass/regions/_region.header.scss */
+  /* line 99, ../sass/regions/_region.header.scss */
   #header {
     min-height: 4.5rem;
   }
 }
-/* line 128, ../sass/regions/_region.header.scss */
+/* line 129, ../sass/regions/_region.header.scss */
 #header #name-and-slogan {
   display: inline-block;
 }
-/* line 131, ../sass/regions/_region.header.scss */
+/* line 132, ../sass/regions/_region.header.scss */
 #header nav {
   float: right;
   line-height: 9rem;
 }
-/* line 134, ../sass/regions/_region.header.scss */
+/* line 135, ../sass/regions/_region.header.scss */
 #header nav a {
   color: white;
   font-weight: 100;
@@ -387,11 +384,11 @@ div.status {
   padding-right: .5rem;
   text-shadow: 1px 1px 1px black;
 }
-/* line 143, ../sass/regions/_region.header.scss */
+/* line 144, ../sass/regions/_region.header.scss */
 #header #header-region {
   padding-top: 9rem;
 }
-/* line 147, ../sass/regions/_region.header.scss */
+/* line 148, ../sass/regions/_region.header.scss */
 #header h1 {
   color: white;
   display: inline-block;
@@ -404,7 +401,7 @@ div.status {
   word-wrap: break-word;
 }
 @media screen and (min-width: 769px) {
-  /* line 147, ../sass/regions/_region.header.scss */
+  /* line 148, ../sass/regions/_region.header.scss */
   #header h1 {
     font-size: 48px;
     letter-spacing: 4.80000019073486px;
@@ -413,46 +410,46 @@ div.status {
   }
 }
 
-/* line 169, ../sass/regions/_region.header.scss */
+/* line 170, ../sass/regions/_region.header.scss */
 .front #header {
   min-height: 60vh;
 }
-/* line 172, ../sass/regions/_region.header.scss */
+/* line 173, ../sass/regions/_region.header.scss */
 .front #header .explore {
   display: inline-block;
 }
 
-/* line 177, ../sass/regions/_region.header.scss */
+/* line 178, ../sass/regions/_region.header.scss */
 #menu-toggle {
   right: 20px;
   position: absolute;
   z-index: 2007;
 }
 @media screen and (min-width: 769px) {
-  /* line 177, ../sass/regions/_region.header.scss */
+  /* line 178, ../sass/regions/_region.header.scss */
   #menu-toggle {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 177, ../sass/regions/_region.header.scss */
+  /* line 178, ../sass/regions/_region.header.scss */
   #menu-toggle {
     top: 3.5rem;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 177, ../sass/regions/_region.header.scss */
+  /* line 178, ../sass/regions/_region.header.scss */
   #menu-toggle {
     top: 1.5rem;
   }
 }
 
-/* line 194, ../sass/regions/_region.header.scss */
+/* line 195, ../sass/regions/_region.header.scss */
 #menu-toggle.active {
   position: fixed;
 }
 
-/* line 198, ../sass/regions/_region.header.scss */
+/* line 199, ../sass/regions/_region.header.scss */
 .explore {
   display: none;
 }
