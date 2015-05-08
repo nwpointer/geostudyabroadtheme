@@ -70,21 +70,19 @@ jQuery("#secondary-menu").toggle();});
             ?>
           </p>
         <?php endif; ?>
+        
+        
+
         <?php if (theme_get_setting('header_text')): ?>
-          <p>
+          <p id="hero_text">
             <?php print_r(theme_get_setting('header_text')) ?>
           </p>
         <?php endif; ?>
+
         <form onsubmit="return explore()">
           <input type="text" placeholder="search">
-          <input  type="submit">
+          <input type="submit" value="submit">
         </form>
-        <script>
-          jQuery(function(){
-            var $ = jQuery;
-            
-          });
-        </script>
       </div>
       
     </div>

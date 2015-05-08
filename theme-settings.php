@@ -95,7 +95,7 @@ function basic_form_system_theme_settings_alter(&$form, $form_state) {
   );
   $form['leader_image'] = array(
     '#type'     => 'managed_file',
-    '#title'    => t('Background'),
+    '#title'    => t('hero image'),
     '#required' => FALSE,
     '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
     '#default_value' => theme_get_setting('leader_image'), 
@@ -104,9 +104,42 @@ function basic_form_system_theme_settings_alter(&$form, $form_state) {
     ),
   );
   $form['header_text'] = array(
-    '#type' => 'textfield',
-    "#title" => t('header text'),
+    '#type' => 'textarea',
+    "#title" => t('hero text'),
     '#default_value' =>  theme_get_setting('header_text'),
+  );
+
+  $form['background_image1'] = array(
+    '#type'     => 'managed_file',
+    '#title'    => t('slider image1'),
+    '#required' => FALSE,
+    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
+    '#default_value' => theme_get_setting('background_image1'), 
+    '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg'),
+    ),
+  );
+
+  $form['background_image2'] = array(
+    '#type'     => 'managed_file',
+    '#title'    => t('slider image2'),
+    '#required' => FALSE,
+    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
+    '#default_value' => theme_get_setting('background_image2'), 
+    '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg'),
+    ),
+  );
+
+  $form['background_image3'] = array(
+    '#type'     => 'managed_file',
+    '#title'    => t('slider image3'),
+    '#required' => FALSE,
+    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
+    '#default_value' => theme_get_setting('background_image3'), 
+    '#upload_validators' => array(
+      'file_validate_extensions' => array('gif png jpg jpeg'),
+    ),
   );
 }
 

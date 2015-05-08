@@ -6,6 +6,13 @@ $headerHeight : 9rem;
 	opacity: 0;
 }
 
+#hero_text{
+	max-width: 800px;
+	position: relative;
+	top:-2rem;
+	text-shadow: 1px 1px 1px black;
+}
+
 #leaderImage{
 	max-width: 100%;
 	margin-top:4rem;
@@ -15,6 +22,19 @@ $headerHeight : 9rem;
 	min-height: 40vh;
 	max-height: initial;
 }
+
+.explore form{
+	// position: relative;
+	// top:-2rem;
+	// 
+	margin-bottom: 3rem;
+}
+.explore input{
+	height: 3.0rem;
+	line-height: 3.0rem;
+	padding: 0 1.75rem;
+}
+
 
 #header{
 	overflow: hidden;
