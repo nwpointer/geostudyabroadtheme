@@ -332,6 +332,7 @@ div.status {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
+  min-width: 100%;
   left: 0;
   top: 0;
 }
