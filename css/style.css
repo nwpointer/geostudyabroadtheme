@@ -1447,3 +1447,8 @@ html, body .front {
 [class*="excursions"] .views-field-body a {
   max-width: 350px;
 }
+
+/* line 228, ../sass/_custom.scss */
+.view-id-staff .row-1 {
+  height: 350px;
+}
