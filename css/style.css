@@ -1346,3 +1346,10 @@ html, body .front {
   font-size: 1.25rem;
   line-height: 4rem;
 }
+
+/* line 200, ../sass/_custom.scss */
+.view-scholarships-for-uo-students- td {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-right: 1.25rem;
+}
