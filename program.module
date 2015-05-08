@@ -164,7 +164,7 @@ function program_search() {
     Showing results for: <span></span> <a id="change" href="">change</a>
   </div>
   <div id="question" style="display:none;">
-    Are you currently enrolled as a student of the University of Oregon? <br>
+    Are you a University of Oregon student?<br>
     <button id="yes">yes</button>
     <button id="no">no</button>
   </div>
