@@ -29,6 +29,15 @@
                   ?>
               <?php endif; ?>
             </li>
+            <li>
+              <?php if (theme_get_setting('background_image3')): ?>
+                  <?php 
+                    $fid = theme_get_setting('background_image3');
+                    $image_url = file_create_url(file_load($fid)->uri);
+                    print ("<img src=". $image_url . "></img>");
+                  ?>
+              <?php endif; ?>
+            </li>
           </ul>
     </div>
     <?php endif; ?>
