@@ -1348,8 +1348,14 @@ html, body .front {
 }
 
 /* line 200, ../sass/_custom.scss */
-.view-scholarships-for-uo-students- td {
-  padding-bottom: 3rem;
+.view-scholarships-for-uo-students- td, .view-uo-departmental-scholarships td {
+  padding-bottom: 1rem;
   padding-top: 2rem;
   padding-right: 1.25rem;
+}
+
+/* line 207, ../sass/_custom.scss */
+.view-scholarships-for-uo-students- .views-field-title a,
+.view-uo-departmental-scholarships .views-field-title a {
+  font-weight: 900;
 }
