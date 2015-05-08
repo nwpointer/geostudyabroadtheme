@@ -11,33 +11,38 @@
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
           <ul class="rslides">
-            <li>
-              <?php if (theme_get_setting('background_image1')): ?>
+            
+            <?php if (theme_get_setting('background_image1')): ?>
+              <li>
                 <?php 
                   $fid = theme_get_setting('background_image1');
                   $image_url = file_create_url(file_load($fid)->uri);
                   print ("<img src=". $image_url . "></img>");
                 ?>
-              <?php endif; ?> 
-            </li>
-            <li>
-              <?php if (theme_get_setting('background_image2')): ?>
+              </li>
+            <?php endif; ?> 
+            
+            <?php if (theme_get_setting('background_image2')): ?>
+              <li>
                   <?php 
                     $fid = theme_get_setting('background_image2');
                     $image_url = file_create_url(file_load($fid)->uri);
                     print ("<img src=". $image_url . "></img>");
                   ?>
-              <?php endif; ?>
+              
             </li>
-            <li>
-              <?php if (theme_get_setting('background_image3')): ?>
-                  <?php 
-                    $fid = theme_get_setting('background_image3');
-                    $image_url = file_create_url(file_load($fid)->uri);
-                    print ("<img src=". $image_url . "></img>");
-                  ?>
-              <?php endif; ?>
-            </li>
+            <?php endif; ?>
+            
+            <?php if (theme_get_setting('background_image3')): ?>
+              <li>
+                <?php 
+                  $fid = theme_get_setting('background_image3');
+                  $image_url = file_create_url(file_load($fid)->uri);
+                  print ("<img src=". $image_url . "></img>");
+                ?>
+              </li>
+            <?php endif; ?>
+            
           </ul>
     </div>
     <?php endif; ?>

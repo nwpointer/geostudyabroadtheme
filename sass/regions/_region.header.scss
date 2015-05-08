@@ -52,7 +52,7 @@ $headerHeight : 9rem;
 	z-index: 0;
 	// background: red;
 	img{
-		min-height: 110vh;
+		min-height: 100vh;
 		min-width: 100%;
 	}
 }
@@ -61,7 +61,7 @@ $headerHeight : 9rem;
   position: relative;
   list-style: none;
   overflow: hidden;
-  min-height: 110vh;
+  min-height: 100vh;
   min-width: 100%;
   padding: 0;
   margin: 0;
@@ -71,7 +71,7 @@ $headerHeight : 9rem;
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
- min-height: 110vh;
+ min-height: 100vh;
 min-width: 100%;
   left: 0;
   top: 0;
