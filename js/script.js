@@ -26,7 +26,7 @@ function filterPriceTable($){
 function hideGraduats($){
 	el = $(".field-name-field-graduate-students- a");
 	if(el.html() == "No"){
-		el.hide()
+		$("#block-fieldblock-6f7d25d0c0d66ee99f2483081a24e88c").hide()
 	};
 }
 
