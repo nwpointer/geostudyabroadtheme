@@ -23,6 +23,13 @@ function filterPriceTable($){
 	}
 }
 
+function hideGraduats($){
+	el = $(".field-name-field-graduate-students- a");
+	if(el.html() == "No"){
+		el.hide()
+	};
+}
+
 
 (function ($, Drupal, window, document, undefined) {
 
@@ -31,6 +38,7 @@ function filterPriceTable($){
 	$(function(){
 
 		filterPriceTable($);
+		hideGraduats($);
 
 		// toggle main menu
 		$("#menu-toggle").click(function(){

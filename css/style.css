@@ -278,7 +278,7 @@ div.status {
 /* line 19, ../sass/regions/_region.header.scss */
 #header {
   overflow: hidden;
-  max-height: 40vh;
+  max-height: 25vh;
   overflow: hidden;
   position: relative;
   min-height: 9rem;
@@ -414,6 +414,10 @@ div.status {
   margin-left: auto;
   margin-right: auto;
 }
+/* line 11, ../sass/regions/_regions.footer.scss */
+#footer #uologo {
+  width: 100%;
+}
 /* line 15, ../sass/components/bourbon/addons/_clearfix.scss */
 #footer:after {
   content: "";
@@ -421,16 +425,16 @@ div.status {
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  /* line 13, ../sass/regions/_regions.footer.scss */
+  /* line 17, ../sass/regions/_regions.footer.scss */
   #footer .block-even {
     margin-right: 0px !important;
   }
 }
-/* line 20, ../sass/regions/_regions.footer.scss */
+/* line 24, ../sass/regions/_regions.footer.scss */
 #footer .block-title {
   text-transform: capitalize;
 }
-/* line 23, ../sass/regions/_regions.footer.scss */
+/* line 27, ../sass/regions/_regions.footer.scss */
 #footer .block {
   font-size: 90%;
   float: left;
@@ -443,7 +447,7 @@ div.status {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 23, ../sass/regions/_regions.footer.scss */
+  /* line 27, ../sass/regions/_regions.footer.scss */
   #footer .block {
     float: left;
     display: block;
@@ -457,7 +461,7 @@ div.status {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 23, ../sass/regions/_regions.footer.scss */
+  /* line 27, ../sass/regions/_regions.footer.scss */
   #footer .block {
     float: left;
     display: block;
@@ -469,7 +473,7 @@ div.status {
     margin-right: 0;
   }
 }
-/* line 37, ../sass/regions/_regions.footer.scss */
+/* line 41, ../sass/regions/_regions.footer.scss */
 #footer input {
   width: 100%;
 }
@@ -1153,19 +1157,29 @@ ul {
   list-style: none;
 }
 
-/* line 39, ../sass/_custom.scss */
+/* line 36, ../sass/_custom.scss */
+.field-item ul {
+  list-style: initial;
+  padding-right: 1rem;
+  position: relative;
+  right: -1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: .5rem;
+}
+
+/* line 47, ../sass/_custom.scss */
 a:link, a:visited {
   color: #004F27;
   text-decoration: none;
 }
 
-/* line 46, ../sass/_custom.scss */
+/* line 54, ../sass/_custom.scss */
 a:hover, a:active {
   color: #008240;
   text-decoration: underline;
 }
 
-/* line 52, ../sass/_custom.scss */
+/* line 60, ../sass/_custom.scss */
 hr {
   position: relative;
   top: 1.0rem;
@@ -1173,22 +1187,22 @@ hr {
   border: 1px solid #f4f4ee;
 }
 
-/* line 60, ../sass/_custom.scss */
+/* line 68, ../sass/_custom.scss */
 #main {
   margin-bottom: 3rem;
 }
 
-/* line 65, ../sass/_custom.scss */
+/* line 73, ../sass/_custom.scss */
 .front #breadcrumbs {
   display: none;
 }
 
-/* line 69, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
 #savedProgramDisplay {
   display: none;
 }
 
-/* line 72, ../sass/_custom.scss */
+/* line 80, ../sass/_custom.scss */
 #barwrapper {
   background: #FED201;
   height: 4rem;
@@ -1196,7 +1210,7 @@ hr {
   margin-bottom: 3rem;
 }
 
-/* line 79, ../sass/_custom.scss */
+/* line 87, ../sass/_custom.scss */
 #barwrapper div {
   max-width: 68em;
   margin-left: auto;
@@ -1209,7 +1223,7 @@ hr {
   clear: both;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 #bar {
   float: left;
   display: block;
@@ -1224,7 +1238,7 @@ hr {
 #bar:last-child {
   margin-right: 0;
 }
-/* line 91, ../sass/_custom.scss */
+/* line 99, ../sass/_custom.scss */
 #bar input[type="submit"] {
   margin-top: 0rem;
   width: 14rem;
@@ -1235,63 +1249,63 @@ hr {
   top: .7rem;
   background: rgba(255, 255, 255, 0.35);
 }
-/* line 101, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 #bar input[type="submit"]:hover {
   background: rgba(255, 255, 255, 0.45);
 }
 
-/* line 105, ../sass/_custom.scss */
+/* line 113, ../sass/_custom.scss */
 #breadcrumbs input#togglesavedProgramDisplay {
   color: red !important;
 }
 
-/* line 108, ../sass/_custom.scss */
+/* line 116, ../sass/_custom.scss */
 .container {
   padding: 0 1rem !important;
 }
 
-/* line 112, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 html, body .front {
   min-height: 100vh;
 }
 
-/* line 116, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 .front {
   background: #1F1F1F;
 }
-/* line 119, ../sass/_custom.scss */
+/* line 127, ../sass/_custom.scss */
 .front #main {
   margin-bottom: 0px;
 }
-/* line 122, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
 .front #main .container {
   display: none !important;
 }
 
-/* line 127, ../sass/_custom.scss */
+/* line 135, ../sass/_custom.scss */
 .explore {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-/* line 133, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 #logo img {
   height: 4rem;
   margin-top: 2rem;
 }
 
-/* line 139, ../sass/_custom.scss */
+/* line 147, ../sass/_custom.scss */
 #favorite-toggle {
   display: none;
 }
 
-/* line 143, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 .node-type-program #favorite-toggle {
   display: block;
   width: 100% !important;
 }
 
-/* line 149, ../sass/_custom.scss */
+/* line 157, ../sass/_custom.scss */
 #secondaryBar {
   background: #fed201;
   line-height: 3.75rem;
@@ -1299,13 +1313,13 @@ html, body .front {
   margin-bottom: 3rem;
   overflow: hidden;
 }
-/* line 156, ../sass/_custom.scss */
+/* line 164, ../sass/_custom.scss */
 #secondaryBar .container {
   position: relative;
   overflow: hidden;
   height: 3.75rem;
 }
-/* line 162, ../sass/_custom.scss */
+/* line 170, ../sass/_custom.scss */
 #secondaryBar #togglesavedProgramDisplay {
   line-height: 2.5rem;
   height: 2.5rem;
@@ -1317,12 +1331,18 @@ html, body .front {
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 175, ../sass/_custom.scss */
+/* line 183, ../sass/_custom.scss */
 #secondaryBar #togglesavedProgramDisplay:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* line 182, ../sass/_custom.scss */
+/* line 190, ../sass/_custom.scss */
 .front #header {
   background-size: cover;
+}
+
+/* line 195, ../sass/_custom.scss */
+.scholarship-title {
+  font-size: 1.25rem;
+  line-height: 4rem;
 }
