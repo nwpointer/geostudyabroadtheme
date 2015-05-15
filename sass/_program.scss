@@ -1,5 +1,10 @@
-.country, .price, .region, .priority, .enrollment_required, .type{
+.country, .price, .region, .priority, .enrollment_required, .type, .discipline, .term{
   display: none;
+}
+
+.desc{
+	font-size:.9rem;
+	margin-top: 1rem;
 }
 
 #enrollment_notice{
