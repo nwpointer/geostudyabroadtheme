@@ -454,190 +454,6 @@ div.status {
   display: none;
 }
 
-/* line 2, ../sass/regions/_region.secondsidebar.scss */
-#sidebar-second {
-  font-size: 85%;
-  padding-top: 60px;
-  padding-left: 40px;
-}
-@media screen and (max-width: 768px) {
-  /* line 2, ../sass/regions/_region.secondsidebar.scss */
-  #sidebar-second {
-    padding-left: 0px;
-  }
-}
-/* line 9, ../sass/regions/_region.secondsidebar.scss */
-#sidebar-second h2 {
-  margin-bottom: .5rem;
-}
-/* line 12, ../sass/regions/_region.secondsidebar.scss */
-#sidebar-second .block-fieldblock:not(:first-child) h2 {
-  margin-top: 1rem;
-}
-
-/* line 2, ../sass/regions/_regions.footer.scss */
-#footer {
-  width: 100%;
-  max-width: 100% !important;
-  overflow: hidden;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 100;
-  padding: 3rem 0;
-  background: #1F1F1F;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 10, ../sass/regions/_regions.footer.scss */
-#footer a {
-  color: #008240;
-}
-/* line 14, ../sass/regions/_regions.footer.scss */
-#footer a:hover {
-  color: #009c4d;
-}
-/* line 20, ../sass/regions/_regions.footer.scss */
-#footer #uologo {
-  width: 100%;
-}
-/* line 15, ../sass/components/bourbon/addons/_clearfix.scss */
-#footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 768px) {
-  /* line 26, ../sass/regions/_regions.footer.scss */
-  #footer .block-even {
-    margin-right: 0px !important;
-  }
-}
-/* line 33, ../sass/regions/_regions.footer.scss */
-#footer .block-title {
-  text-transform: capitalize;
-}
-/* line 36, ../sass/regions/_regions.footer.scss */
-#footer .block {
-  font-size: 90%;
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-}
-/* line 40, ../sass/components/neat/grid/_span-columns.scss */
-#footer .block:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  /* line 36, ../sass/regions/_regions.footer.scss */
-  #footer .block {
-    float: left;
-    display: block;
-    margin-right: 3.22581%;
-    width: 48.3871%;
-    margin-bottom: 3rem;
-  }
-  /* line 40, ../sass/components/neat/grid/_span-columns.scss */
-  #footer .block:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 36, ../sass/regions/_regions.footer.scss */
-  #footer .block {
-    float: left;
-    display: block;
-    margin-right: 6.66667%;
-    width: 100%;
-  }
-  /* line 40, ../sass/components/neat/grid/_span-columns.scss */
-  #footer .block:last-child {
-    margin-right: 0;
-  }
-}
-/* line 50, ../sass/regions/_regions.footer.scss */
-#footer input {
-  width: 100%;
-}
-
-/* line 2, ../sass/regions/_regions.precontent.scss */
-#precontent {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 2.5rem;
-}
-@media screen and (min-width: 769px) {
-  /* line 2, ../sass/regions/_regions.precontent.scss */
-  #precontent {
-    height: 3rem;
-    overflow-y: hidden;
-    overflow-x: auto;
-    line-height: 3rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 2, ../sass/regions/_regions.precontent.scss */
-  #precontent {
-    overflow-y: hidden;
-    overflow-x: auto;
-    white-space: nowrap;
-    line-height: 3rem;
-    height: 3rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 2, ../sass/regions/_regions.precontent.scss */
-  #precontent {
-    margin-bottom: 1rem;
-    padding-top: .75rem;
-    line-height: 1.5rem;
-    white-space: normal;
-    overflow-y: visible;
-    height: auto;
-  }
-  /* line 28, ../sass/regions/_regions.precontent.scss */
-  #precontent .block-fieldblock:not(:first-child) h2:before {
-    display: none !important;
-  }
-}
-/* line 32, ../sass/regions/_regions.precontent.scss */
-#precontent .field-items p {
-  display: inline-block;
-  max-width: 800px;
-}
-/* line 36, ../sass/regions/_regions.precontent.scss */
-#precontent .block-fieldblock:not(:first-child) h2:before {
-  padding-left: .5rem;
-  padding-right: .5rem;
-  content: "|";
-}
-/* line 56, ../sass/regions/_regions.precontent.scss */
-#precontent .block-fieldblock {
-  display: inline-block !important;
-  overflow: hidden;
-}
-/* line 62, ../sass/regions/_regions.precontent.scss */
-#precontent h2.block-title, #precontent .field-item p, #precontent .field-item {
-  font-size: 1rem !important;
-  margin-bottom: 0rem;
-}
-/* line 67, ../sass/regions/_regions.precontent.scss */
-#precontent h2.block-title {
-  font-weight: 600;
-}
-/* line 69, ../sass/regions/_regions.precontent.scss */
-#precontent h2.block-title:after {
-  content: ":";
-}
-/* line 73, ../sass/regions/_regions.precontent.scss */
-#precontent *:not(.contextual-links-wrapper) {
-  display: inline-block;
-}
-/* line 77, ../sass/regions/_regions.precontent.scss */
-#precontent .contextual-links-wrapper {
-  display: none !important;
-}
-
 /* line 1, ../sass/_program.scss */
 .country, .price, .region, .priority, .enrollment_required, .type, .discipline, .term {
   display: none;
@@ -838,7 +654,7 @@ div.status {
   clear: both;
 }
 /* line 134, ../sass/_program.scss */
-#programList ul .card {
+#programList ul .card, #programList ul #scholarship-container li, #scholarship-container #programList ul li {
   background: white;
   margin-top: 1.5rem;
   height: 307px;
@@ -846,59 +662,59 @@ div.status {
   transition: box-shadow 1s;
 }
 /* line 140, ../sass/_program.scss */
-#programList ul .card:hover {
+#programList ul .card:hover, #programList ul #scholarship-container li:hover, #scholarship-container #programList ul li:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 /* line 145, ../sass/_program.scss */
-#programList ul .card img {
+#programList ul .card img, #programList ul #scholarship-container li img, #scholarship-container #programList ul li img {
   min-width: 100%;
   height: 150px;
 }
 /* line 149, ../sass/_program.scss */
-#programList ul .card .content {
+#programList ul .card .content, #programList ul #scholarship-container li .content, #scholarship-container #programList ul li .content {
   padding: 0 .5rem;
 }
 /* line 152, ../sass/_program.scss */
-#programList ul .card a:hover {
+#programList ul .card a:hover, #programList ul #scholarship-container li a:hover, #scholarship-container #programList ul li a:hover {
   text-decoration: none;
 }
 @media screen and (min-width: 769px) {
   /* line 134, ../sass/_program.scss */
-  #programList ul .card {
+  #programList ul .card, #programList ul #scholarship-container li, #scholarship-container #programList ul li {
     float: left;
     display: block;
     margin-right: 2.12766%;
     width: 31.91489%;
   }
   /* line 40, ../sass/components/neat/grid/_span-columns.scss */
-  #programList ul .card:last-child {
+  #programList ul .card:last-child, #programList ul #scholarship-container li:last-child, #scholarship-container #programList ul li:last-child {
     margin-right: 0;
   }
   /* line 160, ../sass/_program.scss */
-  #programList ul .card:nth-child(3n) {
+  #programList ul .card:nth-child(3n), #programList ul #scholarship-container li:nth-child(3n), #scholarship-container #programList ul li:nth-child(3n) {
     margin-right: 0px;
   }
 }
 @media screen and (max-width: 768px) {
   /* line 134, ../sass/_program.scss */
-  #programList ul .card {
+  #programList ul .card, #programList ul #scholarship-container li, #scholarship-container #programList ul li {
     float: left;
     display: block;
     margin-right: 3.22581%;
     width: 48.3871%;
   }
   /* line 40, ../sass/components/neat/grid/_span-columns.scss */
-  #programList ul .card:last-child {
+  #programList ul .card:last-child, #programList ul #scholarship-container li:last-child, #scholarship-container #programList ul li:last-child {
     margin-right: 0;
   }
   /* line 166, ../sass/_program.scss */
-  #programList ul .card:nth-child(2n) {
+  #programList ul .card:nth-child(2n), #programList ul #scholarship-container li:nth-child(2n), #scholarship-container #programList ul li:nth-child(2n) {
     margin-right: 0px;
   }
 }
 @media screen and (max-width: 480px) {
   /* line 134, ../sass/_program.scss */
-  #programList ul .card {
+  #programList ul .card, #programList ul #scholarship-container li, #scholarship-container #programList ul li {
     float: left;
     display: block;
     margin-right: 6.66667%;
@@ -906,7 +722,7 @@ div.status {
     margin-right: 0px;
   }
   /* line 40, ../sass/components/neat/grid/_span-columns.scss */
-  #programList ul .card:last-child {
+  #programList ul .card:last-child, #programList ul #scholarship-container li:last-child, #scholarship-container #programList ul li:last-child {
     margin-right: 0;
   }
 }
@@ -935,6 +751,203 @@ div.status {
 #savedProgramDisplay #favorites-list .remove {
   color: red !important;
   padding-left: .5rem;
+}
+
+/* line 4, ../sass/regions/_region.scholarship-container.scss */
+#scholarship-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../sass/components/bourbon/addons/_clearfix.scss */
+#scholarship-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 2, ../sass/regions/_region.secondsidebar.scss */
+#sidebar-second {
+  font-size: 85%;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  /* line 2, ../sass/regions/_region.secondsidebar.scss */
+  #sidebar-second {
+    padding-left: 0px;
+  }
+}
+/* line 9, ../sass/regions/_region.secondsidebar.scss */
+#sidebar-second h2 {
+  margin-bottom: .5rem;
+}
+/* line 12, ../sass/regions/_region.secondsidebar.scss */
+#sidebar-second .block-fieldblock:not(:first-child) h2 {
+  margin-top: 1rem;
+}
+
+/* line 2, ../sass/regions/_regions.footer.scss */
+#footer {
+  width: 100%;
+  max-width: 100% !important;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
+  padding: 3rem 0;
+  background: #1F1F1F;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 10, ../sass/regions/_regions.footer.scss */
+#footer a {
+  color: #008240;
+}
+/* line 14, ../sass/regions/_regions.footer.scss */
+#footer a:hover {
+  color: #009c4d;
+}
+/* line 20, ../sass/regions/_regions.footer.scss */
+#footer #uologo {
+  width: 100%;
+}
+/* line 15, ../sass/components/bourbon/addons/_clearfix.scss */
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  /* line 26, ../sass/regions/_regions.footer.scss */
+  #footer .block-even {
+    margin-right: 0px !important;
+  }
+}
+/* line 33, ../sass/regions/_regions.footer.scss */
+#footer .block-title {
+  text-transform: capitalize;
+}
+/* line 36, ../sass/regions/_regions.footer.scss */
+#footer .block {
+  font-size: 90%;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 23.40426%;
+}
+/* line 40, ../sass/components/neat/grid/_span-columns.scss */
+#footer .block:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 36, ../sass/regions/_regions.footer.scss */
+  #footer .block {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin-bottom: 3rem;
+  }
+  /* line 40, ../sass/components/neat/grid/_span-columns.scss */
+  #footer .block:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 36, ../sass/regions/_regions.footer.scss */
+  #footer .block {
+    float: left;
+    display: block;
+    margin-right: 6.66667%;
+    width: 100%;
+  }
+  /* line 40, ../sass/components/neat/grid/_span-columns.scss */
+  #footer .block:last-child {
+    margin-right: 0;
+  }
+}
+/* line 50, ../sass/regions/_regions.footer.scss */
+#footer input {
+  width: 100%;
+}
+
+/* line 2, ../sass/regions/_regions.precontent.scss */
+#precontent {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 769px) {
+  /* line 2, ../sass/regions/_regions.precontent.scss */
+  #precontent {
+    height: 3rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 2, ../sass/regions/_regions.precontent.scss */
+  #precontent {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 2, ../sass/regions/_regions.precontent.scss */
+  #precontent {
+    margin-bottom: 1rem;
+    padding-top: .75rem;
+    line-height: 1.5rem;
+    white-space: normal;
+    overflow-y: visible;
+    height: auto;
+  }
+  /* line 28, ../sass/regions/_regions.precontent.scss */
+  #precontent .block-fieldblock:not(:first-child) h2:before {
+    display: none !important;
+  }
+}
+/* line 32, ../sass/regions/_regions.precontent.scss */
+#precontent .field-items p {
+  display: inline-block;
+  max-width: 800px;
+}
+/* line 36, ../sass/regions/_regions.precontent.scss */
+#precontent .block-fieldblock:not(:first-child) h2:before {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  content: "|";
+}
+/* line 56, ../sass/regions/_regions.precontent.scss */
+#precontent .block-fieldblock {
+  display: inline-block !important;
+  overflow: hidden;
+}
+/* line 62, ../sass/regions/_regions.precontent.scss */
+#precontent h2.block-title, #precontent .field-item p, #precontent .field-item {
+  font-size: 1rem !important;
+  margin-bottom: 0rem;
+}
+/* line 67, ../sass/regions/_regions.precontent.scss */
+#precontent h2.block-title {
+  font-weight: 600;
+}
+/* line 69, ../sass/regions/_regions.precontent.scss */
+#precontent h2.block-title:after {
+  content: ":";
+}
+/* line 73, ../sass/regions/_regions.precontent.scss */
+#precontent *:not(.contextual-links-wrapper) {
+  display: inline-block;
+}
+/* line 77, ../sass/regions/_regions.precontent.scss */
+#precontent .contextual-links-wrapper {
+  display: none !important;
 }
 
 /* line 1, ../sass/_photo_gallery.scss */
