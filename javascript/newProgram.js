@@ -30,8 +30,8 @@
 					&& (_(values_region).contains(item.values().region) || !values_region)
 					&& (_(values_type).contains(item.values().type) || !values_type)
 					&& (_(values_priority).contains(item.values().priority) || !values_priority)
-					&& ((item.values().enrollment_required == 0 && usertype == "non uo student")
-					|| (usertype == "uo student"));
+					&& ((item.values().enrollment_required == 0 && usertype == "Non-UO students")
+					|| (usertype == "UO students"));
 		});
 	}
 
@@ -50,7 +50,7 @@
 
 	function registerUsertypeAnswer(){
 		$('#question button').click(function(event){
-			var userIsUOStudent = $(event.target).attr("id") == "yes" ? "uo student" : "non uo student";
+			var userIsUOStudent = $(event.target).attr("id") == "yes" ? "UO students" : "Non-UO students";
 			setCookie("usertype", userIsUOStudent, 7);
 			$('#question').toggle();
 			$('#programList').toggle();

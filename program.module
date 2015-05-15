@@ -38,7 +38,15 @@ function program_search() {
     '/multiple-select.css'
   ));
 
- 
+  function getDescriptionFrom($node){
+    $desc = $node->body['und'][0]["value"];
+    $desc = preg_replace('/<h3[^>]*>([\s\S]*?)<\/h3[^>]*>/', '', $desc);
+    $desc = strip_tags($desc);
+    $desc = substr($desc, 0, 100);
+    return $desc;
+  }
+
+
   function getTerm($node, $f){
     $term =($node->{$f});
     if(!empty($term)){
@@ -110,6 +118,8 @@ function program_search() {
     $academic_standing = getCustomField($node, "field_academic_standing");
     $header_background = getCustomField($node, "field_header_background");
     $enrollment_required = getCustomField($node, "field_enrollment_required");
+    $desc = getDescriptionFrom($node);
+    
 
     $link = drupal_get_path_alias("node/{$value}");
 
@@ -126,10 +136,12 @@ function program_search() {
     array_push($regions, $region);
     $type = getTerm($node, "field_program_type");
     array_push($types, $type);
+
+
     // $program_type = getTerm($node, "field_program_type");
     // array_push($types, $program_type);
     
-    $card = "<li class='card'><a class='url' href=/{$link}><div class='img-wrap'><img class='image' src=$header_background></div><div class='content'><h5 class='title'>$title</h5><p class='term'>$term</p><p class='discipline'>$discipline</p><p class='country'>$country</p><p class='price'>$price</p><p class='region'>$region</p><p class='priority'>$priority</p><p class='enrollment_required'>$enrollment_required[value]</p><p class='type'>$type</p>
+    $card = "<li class='card'><a class='url' href=/{$link}><div class='img-wrap'><img class='image' src=$header_background></div><div class='content'><h5 class='title'>$title</h5><p class='term'>$term</p><p class='discipline'>$discipline</p><p class='country'>$country</p><p class='price'>$price</p><p class='region'>$region</p><p class='priority'>$priority</p><p class='enrollment_required'>$enrollment_required[value]</p><p class='type'>$type</p> <p class='desc'>$desc ...</p>
     </div></a>";
 
     
@@ -172,7 +184,7 @@ function program_search() {
   <div id="programList">
   <div id="controls">
     <input class="search" placeholder="Search" value=""/>
-    <span class="weak">found:</span> <span id="found">'."$numberofPrograms".'</span>
+    <!--<span class="weak">found:</span> <span id="found">'."$numberofPrograms".'</span>-->
     <br><br>
     
     <div id="catagories">
@@ -180,19 +192,19 @@ function program_search() {
 
       </select>
 
-      <select class="country_s" multiple data-placeholder="<span>Choose a</span> country">'. generateOptionHTML($countries) . '
+      <select class="country_s" multiple data-placeholder="<span>Choose a</span> Country">'. generateOptionHTML($countries) . '
       </select>
 
-      <select class="term_s" multiple data-placeholder="<span>Choose a</span> term">'. generateOptionHTML($terms) . '
+      <select class="term_s" multiple data-placeholder="<span>Choose a</span> Term">'. generateOptionHTML($terms) . '
       </select>
 
-      <select class="price_s" multiple data-placeholder="<span>Choose a</span> price">'. generateOptionHTML($prices) . '
+      <!--<select class="price_s" multiple data-placeholder="<span>Choose a</span> Price">'. generateOptionHTML($prices) . '
+      </select>-->
+
+      <select class="region_s" multiple data-placeholder="<span>Choose a</span> Region">'. generateOptionHTML($regions) . '
       </select>
 
-      <select class="region_s" multiple data-placeholder="<span>Choose a</span> region">'. generateOptionHTML($regions) . '
-      </select>
-
-      <select class="type_s" multiple data-placeholder="<span>Choose a</span> program type">'. generateOptionHTML($types) . '
+      <select class="type_s" multiple data-placeholder="<span>Choose a</span> Program Type">'. generateOptionHTML($types) . '
       </select>
     </div>
   </div>
@@ -211,9 +223,9 @@ function program_search() {
       Showing results for: <span></span> <a id="change" href="">change</a>
     </div>
     <div id="question" style="display:none;">
-      Are you currently enrolled as a student of the University of Oregon? <br>
-      <button id="yes">yes</button>
-      <button id="no">no</button>
+      Are you a University of Oregon student? <br>
+      <button id="yes" class="button">Yes</button>
+      <button id="no">No</button>
     </div>
 
   	<div id="programs">
