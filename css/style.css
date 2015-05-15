@@ -488,7 +488,15 @@ div.status {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 11, ../sass/regions/_regions.footer.scss */
+/* line 10, ../sass/regions/_regions.footer.scss */
+#footer a {
+  color: #008240;
+}
+/* line 14, ../sass/regions/_regions.footer.scss */
+#footer a:hover {
+  color: #009c4d;
+}
+/* line 20, ../sass/regions/_regions.footer.scss */
 #footer #uologo {
   width: 100%;
 }
@@ -499,16 +507,16 @@ div.status {
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  /* line 17, ../sass/regions/_regions.footer.scss */
+  /* line 26, ../sass/regions/_regions.footer.scss */
   #footer .block-even {
     margin-right: 0px !important;
   }
 }
-/* line 24, ../sass/regions/_regions.footer.scss */
+/* line 33, ../sass/regions/_regions.footer.scss */
 #footer .block-title {
   text-transform: capitalize;
 }
-/* line 27, ../sass/regions/_regions.footer.scss */
+/* line 36, ../sass/regions/_regions.footer.scss */
 #footer .block {
   font-size: 90%;
   float: left;
@@ -521,7 +529,7 @@ div.status {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 27, ../sass/regions/_regions.footer.scss */
+  /* line 36, ../sass/regions/_regions.footer.scss */
   #footer .block {
     float: left;
     display: block;
@@ -535,7 +543,7 @@ div.status {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 27, ../sass/regions/_regions.footer.scss */
+  /* line 36, ../sass/regions/_regions.footer.scss */
   #footer .block {
     float: left;
     display: block;
@@ -547,7 +555,7 @@ div.status {
     margin-right: 0;
   }
 }
-/* line 41, ../sass/regions/_regions.footer.scss */
+/* line 50, ../sass/regions/_regions.footer.scss */
 #footer input {
   width: 100%;
 }

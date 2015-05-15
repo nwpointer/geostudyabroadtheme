@@ -6,6 +6,15 @@
 	color:rgba(255,255,255,.6);
 	font-weight: 100;
 	padding: 3rem 0;
+
+	a{
+		// color:red !important;
+		color: lighten(#004F27, 10%);
+	}
+	a:hover{
+		// color:red !important;
+		color: lighten(#004F27, 15%);
+	}
 	
 	// 12345
 	#uologo{
