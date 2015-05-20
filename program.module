@@ -42,7 +42,7 @@ function program_search() {
     $desc = $node->body['und'][0]["value"];
     $desc = preg_replace('/<h3[^>]*>([\s\S]*?)<\/h3[^>]*>/', '', $desc);
     $desc = strip_tags($desc);
-    $desc = substr($desc, 0, 100);
+    $desc=substr($desc, 0, strpos($desc, ' ', 100));
     return $desc;
   }
 
