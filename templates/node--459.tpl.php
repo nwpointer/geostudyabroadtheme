@@ -1,75 +1,78 @@
+<p>Several scholarships, grants, and free reductions are available to University of Oregon</p>
+
+<br>
+
 <ul id="scholarship-container">
-	
 <li>
-	<h3><a href="/">GEO Scholarship</a></h3>
+	<h3 style="border-color:#fed102 !important"><a href="/">Global Education Oregon Scholarship</a></h3>
 	<p>
 		GEO is passionate about study abroad and hopes that every student is able to participate in a life-...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">General Study Abroad Scholarships</a></h3>
+	<h3 style="border-color:#164732 !important"><a href="/">General Study Abroad Scholarships</a></h3>
 	<p>
 		These scholarships are open to a majority of students or are not tied to a specific program or region....
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">UO Departmental Scholarships</a></h3>
+	<h3 style="border-color:#62a710 !important"><a href="/">UO Departmental Scholarships</a></h3>
 	<p>
 		Several UO departments, associations, and colleges offer study abroad scholarships.
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">National Distinguished Scholarships</a></h3>
+	<h3 style="border-color:#daaa00 !important"><a href="/">National Distinguished Scholarships</a></h3>
 	<p>
 		Prestigious national scholarships that support undergraduate and graduate students conducting research or...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">Regional and Program Provider Scholarships</a></h3>
+	<h3 style="border-color:#007934 !important"><a href="/">Regional and Program Provider Scholarships</a></h3>
 	<p>
 		Many of the UO-sponsored study abroad providers offer scholarships for their programs. There are also...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">Using Your Financial Aid for Study Abroad</a></h3>
+	<h3 style="border-color:#693025 !important"><a href="/">Using Your Financial Aid for Study Abroad</a></h3>
 	<p>
 		Most forms of financial aid may be used to pay for your study abroad program costs. Please note, however,...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">External Scholarship Resources</a></h3>
+	<h3 style="border-color:#55565b !important"><a href="/">External Scholarship Resources</a></h3>
 	<p>
 		The following guide includes state, national, and international financial aid resources. Some of these...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 <li>
-	<h3><a href="/">Resources for graduating seniors and graduate students</a></h3>
+	<h3 style="border-color:#004e72 !important"><a href="/">Resources for graduating seniors and graduates</a></h3>
 	<p>
 		The following listing can help graduate students find many fellowship, scholarship, and grant options for...
 	</p>
+	<a href="/">Read More</a>
 </li>
 
-<a href="/">Read More</a>
 
 </ul>

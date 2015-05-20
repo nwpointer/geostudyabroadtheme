@@ -4,6 +4,37 @@
 #scholarship-container{
 	@include outer-container;
 	li{
-		@extend .card;
+		width: 32%;
+  		display: inline-block;
+  		overflow: hidden;
+  		margin: 0.25%;
+  		padding:2rem 1rem;
+  		border:1px solid rgba(0,0,0,.1);
+  		height: 290px;
+  		&:hover{
+  			box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+  		}
+  		
+  		h3{
+  			border-bottom: 1rem solid black !important;
+  		}
+
+  		a{
+  			margin-bottom: .5rem;
+  			display: inline-block;
+  			text-decoration: none;
+  		}
+
+  		p{
+  			max-height: 72px;
+  			overflow: ellipsis;
+  			font-size: .85rem;
+  		}
 	}
+}
+
+@media (max-width: 1000px) {
+		li{
+			// background:red;
+		}
 }

@@ -7,6 +7,32 @@
 	margin-top: 1rem;
 }
 
+.ms-parent.reset{
+	display: block;
+  height: 26px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid red;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 26px;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 31px;
+  position: relative;
+  top: -1px;
+  line-height: 30px;
+  text-align: center;
+  
+  a{
+  	color:red;
+  }
+}
+
 #enrollment_notice{
   position: relative;
   text-align: right;
