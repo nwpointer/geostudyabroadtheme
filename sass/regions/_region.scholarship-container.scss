@@ -1,0 +1,9 @@
+@import '../program';
+
+
+#scholarship-container{
+	@include outer-container;
+	li{
+		@extend .card;
+	}
+}
