@@ -1254,11 +1254,16 @@ body:not(.page-node) #p-Search input, .node-type-program #p-Search input, .not-f
 }
 
 /* line 33, ../sass/_custom.scss */
+.messages.error {
+  display: none;
+}
+
+/* line 37, ../sass/_custom.scss */
 ul {
   list-style: none;
 }
 
-/* line 36, ../sass/_custom.scss */
+/* line 40, ../sass/_custom.scss */
 .field-item ul {
   list-style: initial;
   padding-right: 1rem;
@@ -1268,19 +1273,19 @@ ul {
   margin-bottom: .5rem;
 }
 
-/* line 47, ../sass/_custom.scss */
+/* line 51, ../sass/_custom.scss */
 a:link, a:visited {
   color: #004F27;
   text-decoration: none;
 }
 
-/* line 54, ../sass/_custom.scss */
+/* line 58, ../sass/_custom.scss */
 a:hover, a:active {
   color: #008240;
   text-decoration: underline;
 }
 
-/* line 60, ../sass/_custom.scss */
+/* line 64, ../sass/_custom.scss */
 hr {
   position: relative;
   top: 1.0rem;
@@ -1288,22 +1293,22 @@ hr {
   border: 1px solid #f4f4ee;
 }
 
-/* line 68, ../sass/_custom.scss */
+/* line 72, ../sass/_custom.scss */
 #main {
   margin-bottom: 3rem;
 }
 
-/* line 73, ../sass/_custom.scss */
+/* line 77, ../sass/_custom.scss */
 .front #breadcrumbs {
   display: none;
 }
 
-/* line 77, ../sass/_custom.scss */
+/* line 81, ../sass/_custom.scss */
 #savedProgramDisplay {
   display: none;
 }
 
-/* line 80, ../sass/_custom.scss */
+/* line 84, ../sass/_custom.scss */
 #barwrapper {
   background: #FED201;
   height: 4rem;
@@ -1311,7 +1316,7 @@ hr {
   margin-bottom: 3rem;
 }
 
-/* line 87, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 #barwrapper div {
   max-width: 68em;
   margin-left: auto;
@@ -1324,7 +1329,7 @@ hr {
   clear: both;
 }
 
-/* line 91, ../sass/_custom.scss */
+/* line 95, ../sass/_custom.scss */
 #bar {
   float: left;
   display: block;
@@ -1339,7 +1344,7 @@ hr {
 #bar:last-child {
   margin-right: 0;
 }
-/* line 99, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 #bar input[type="submit"] {
   margin-top: 0rem;
   width: 14rem;
@@ -1350,63 +1355,63 @@ hr {
   top: .7rem;
   background: rgba(255, 255, 255, 0.35);
 }
-/* line 109, ../sass/_custom.scss */
+/* line 113, ../sass/_custom.scss */
 #bar input[type="submit"]:hover {
   background: rgba(255, 255, 255, 0.45);
 }
 
-/* line 113, ../sass/_custom.scss */
+/* line 117, ../sass/_custom.scss */
 #breadcrumbs input#togglesavedProgramDisplay {
   color: red !important;
 }
 
-/* line 116, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 .container {
   padding: 0 1rem !important;
 }
 
-/* line 120, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 html, body .front {
   min-height: 100vh;
 }
 
-/* line 124, ../sass/_custom.scss */
+/* line 128, ../sass/_custom.scss */
 .front {
   background: #1F1F1F;
 }
-/* line 127, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 .front #main {
   margin-bottom: 0px;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 .front #main .container {
   display: none !important;
 }
 
-/* line 135, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 .explore {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-/* line 141, ../sass/_custom.scss */
+/* line 145, ../sass/_custom.scss */
 #logo img {
   height: 4rem;
   margin-top: 2rem;
 }
 
-/* line 147, ../sass/_custom.scss */
+/* line 151, ../sass/_custom.scss */
 #favorite-toggle {
   display: none;
 }
 
-/* line 151, ../sass/_custom.scss */
+/* line 155, ../sass/_custom.scss */
 .node-type-program #favorite-toggle {
   display: block;
   width: 100% !important;
 }
 
-/* line 157, ../sass/_custom.scss */
+/* line 161, ../sass/_custom.scss */
 #secondaryBar {
   background: #fed201;
   line-height: 3.75rem;
@@ -1414,13 +1419,13 @@ html, body .front {
   margin-bottom: 3rem;
   overflow: hidden;
 }
-/* line 164, ../sass/_custom.scss */
+/* line 168, ../sass/_custom.scss */
 #secondaryBar .container {
   position: relative;
   overflow: hidden;
   height: 3.75rem;
 }
-/* line 170, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 #secondaryBar #togglesavedProgramDisplay {
   line-height: 2.5rem;
   height: 2.5rem;
@@ -1432,37 +1437,37 @@ html, body .front {
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 183, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 #secondaryBar #togglesavedProgramDisplay:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* line 190, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 .front #header {
   background-size: cover;
 }
 
-/* line 195, ../sass/_custom.scss */
+/* line 199, ../sass/_custom.scss */
 .scholarship-title {
   font-size: 1.25rem;
   line-height: 4rem;
 }
 
-/* line 201, ../sass/_custom.scss */
+/* line 205, ../sass/_custom.scss */
 .view-scholarships-for-uo-students- td, .view-uo-departmental-scholarships td, .view-display-id-block td {
   padding-bottom: 1rem;
   padding-top: 2rem;
   padding-right: 1.25rem;
 }
 
-/* line 213, ../sass/_custom.scss */
+/* line 217, ../sass/_custom.scss */
 .view-scholarships-for-uo-students- .views-field-title a,
 .view-uo-departmental-scholarships .views-field-title a,
 .view-display-id-block .views-field-title a {
   font-weight: 900;
 }
 
-/* line 217, ../sass/_custom.scss */
+/* line 221, ../sass/_custom.scss */
 [class*="excursions"] .views-field-title a {
   font-size: 1.25rem;
   padding-top: 1rem;
@@ -1470,12 +1475,12 @@ html, body .front {
   padding-bottom: .5rem;
 }
 
-/* line 224, ../sass/_custom.scss */
+/* line 228, ../sass/_custom.scss */
 [class*="excursions"] .views-field-body a {
   max-width: 350px;
 }
 
-/* line 228, ../sass/_custom.scss */
+/* line 232, ../sass/_custom.scss */
 .view-id-staff .row-1 {
   height: 350px;
 }
