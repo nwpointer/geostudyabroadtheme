@@ -73,7 +73,7 @@
 
     <script>
       jQuery("#menu-toggle").click(function(){
-jQuery("#secondary-menu").toggle();});
+      jQuery("#secondary-menu").toggle();});
     </script>
 
       <?php if ($page['header']): ?>
@@ -88,17 +88,14 @@ jQuery("#secondary-menu").toggle();});
             <?php 
               $fid = theme_get_setting('leader_image');
               $image_url = file_create_url(file_load($fid)->uri);
-              print ("<img src=". $image_url . " id='leaderImage'></img>");
+              //print ("<img src=". $image_url . " id='leaderImage'></img>");
             ?>
           </p>
         <?php endif; ?>
         
-        
 
         <?php if (theme_get_setting('header_text')): ?>
-          <p id="hero_text">
             <?php print_r(theme_get_setting('header_text')) ?>
-          </p>
         <?php endif; ?>
 
         <form onsubmit="return explore()">
@@ -143,14 +140,14 @@ jQuery("#secondary-menu").toggle();});
             if(isset($node->field_country)){
               print "<li><span><a href='/programs'>programs</a></span></li>";
               $country = $node->field_country['und'][0]['taxonomy_term']->name ;
-              print "<li><span><a href='/programs/countries/". $country ."'>". $country . "</a></span></li>"; 
+              print "<li><span><a href='/programs/search/". $country ."'>". $country . "</a></span></li>"; 
             }
             else{
-            // print("<li><span><a>". drupal_get_title() . "</a></span></li>");
+            print("<li><span><a>". drupal_get_title() . "</a></span></li>");
           }
           }
           else{
-            // print("<li><span><a>". drupal_get_title() . "</a></span></li>");
+            print("<li><span><a>". drupal_get_title() . "</a></span></li>");
           }
         ?>
       </ul> 

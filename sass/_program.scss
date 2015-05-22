@@ -1,7 +1,14 @@
 .country, .price, .region, .priority, .enrollment_required, .type, .discipline, .term{
   display: none;
 }
-
+.page-programs{
+	#breadcrumbs li:first-child{
+		display: inline-block;
+	}
+	#breadcrumbs li{
+		display: none;
+	}
+}
 .desc{
 	font-size:.9rem;
 	margin-top: 1rem;

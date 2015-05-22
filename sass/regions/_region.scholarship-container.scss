@@ -33,8 +33,15 @@
 	}
 }
 
-@media (max-width: 1000px) {
-		li{
-			// background:red;
-		}
+@media screen and (max-width: 900px){
+  #scholarship-container li{
+    width: 49%;
+  }
 }
+
+@media screen and (max-width: 480px){
+  #scholarship-container li{
+    width: 100%;
+  }
+}
+

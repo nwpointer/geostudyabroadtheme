@@ -6,11 +6,33 @@ $headerHeight : 9rem;
 	opacity: 0;
 }
 
-#hero_text{
+.explore h1#hero-header{
+	margin-bottom: 2.5rem;
+	margin-top:2rem;
+}
+
+#hero-text{
 	max-width: 800px;
-	position: relative;
-	top:-2rem;
+	position: relative !important;
+	// z-index:10000;
+	// top:-2rem;
 	text-shadow: 1px 1px 1px black;
+	margin-bottom:2rem !important;
+}
+
+@media screen and (max-width: 480px){
+	.explore h1#hero-header{
+		font-size: 2rem;
+	}
+}
+
+header#header{
+	background:none !important;
+}
+
+.hero-slider{
+	z-index:-1 !important;
+
 }
 
 #leaderImage{
@@ -36,7 +58,7 @@ $headerHeight : 9rem;
 	// 
 	margin-bottom: 3rem;
 	position: relative;
-	z-index: 1;
+	// z-index: 1;
 }
 .explore input{
 	height: 3.0rem;
