@@ -10,38 +10,19 @@
   <header id="header">
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
+
+      <?php $num = rand(1,3); $selector = 'background_image' . $num; ?>
           <ul class="rslides">
             
-            <?php if (theme_get_setting('background_image1')): ?>
+            <?php if (theme_get_setting($selector)): ?>
               <li>
                 <?php 
-                  $fid = theme_get_setting('background_image1');
+                  $fid = theme_get_setting($selector);
                   $image_url = file_create_url(file_load($fid)->uri);
                   print ("<img src=". $image_url . "></img>");
                 ?>
               </li>
             <?php endif; ?> 
-            
-            <?php if (theme_get_setting('background_image2')): ?>
-              <li>
-                  <?php 
-                    $fid = theme_get_setting('background_image2');
-                    $image_url = file_create_url(file_load($fid)->uri);
-                    print ("<img src=". $image_url . "></img>");
-                  ?>
-              
-            </li>
-            <?php endif; ?>
-            
-            <?php if (theme_get_setting('background_image3')): ?>
-              <li>
-                <?php 
-                  $fid = theme_get_setting('background_image3');
-                  $image_url = file_create_url(file_load($fid)->uri);
-                  print ("<img src=". $image_url . "></img>");
-                ?>
-              </li>
-            <?php endif; ?>
             
           </ul>
     </div>
