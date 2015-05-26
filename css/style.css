@@ -283,6 +283,11 @@ div.status {
     font-size: 2rem;
   }
 }
+/* line 29, ../sass/regions/_region.header.scss */
+.front header#header {
+  background: none !important;
+}
+
 /* line 33, ../sass/regions/_region.header.scss */
 .hero-slider {
   z-index: -1 !important;
