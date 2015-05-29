@@ -1,7 +1,15 @@
 @import '_config';
 @import 'regions/_region.header';
 
+
 nav #primary{
+	a{
+		color:white;
+		font-weight: 100;
+		font-size: 90%;
+		padding-right: .5rem;
+		text-shadow: 1px 1px 1px black;
+	}
 	@if responsive {
 		@include media($tablet) {
 			display: none;
@@ -26,5 +34,26 @@ nav #primary{
 			display: inline !important;
 		}
 	}
+}
+
+#menu-toggle{
+	right: $padding;
+	position: absolute;
+	z-index: 2007;
+
+	@if $responsive {
+    @include media($desktop) {
+      display: none;
+    }
+    @include media($tablet) {
+    	top:3.5rem;
+    }
+    @include media($mobile){
+    	top:1.5rem;
+    }
+  }
+}
+#menu-toggle.active{
+	position: fixed;
 }
 

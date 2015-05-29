@@ -72,53 +72,6 @@ a.button{
 	text-align:center !important;
 	letter-spacing: .2rem !important;
 }
-// @if $responsive {
-// 	@include media($tablet) {
-// 		#header input[type="text"]{
-// 		background: none;
-// 		border:2px solid white;
-// 		background: rgba(0,0,0,.1);
-// 		color:white;
-// 		outline: none;
-// 		line-height: 2.5rem;
-// 		font-size: 1.25rem;
-// 		width:250px;
-// 		display: inline-block;
-// 		margin-bottom: 2.5rem;
-// 	}
-
-// 	#header input[type="submit"]{
-// 		width:200px;
-// 		position: relative;
-// 		top:-.08rem;
-// 		outline:none;
-// 		left:.5rem;
-// 	}
-// }
-// }
-// @include tablet {
-// 	#header input[type="text"]{
-// 		background: none;
-// 		border:2px solid white;
-// 		background: rgba(0,0,0,.1);
-// 		color:white;
-// 		outline: none;
-// 		line-height: 2.5rem;
-// 		font-size: 1.25rem;
-// 		width:250px;
-// 		display: inline-block;
-// 		margin-bottom: 2.5rem;
-// 	}
-
-// 	#header input[type="submit"]{
-// 		width:200px;
-// 		position: relative;
-// 		top:-.08rem;
-// 		outline:none;
-// 		left:.5rem;
-// 	}
-// }
-
 body:not(.page-node), .node-type-program, .not-front{
 	#p-Search input{
 		display: none !important;

@@ -2,6 +2,11 @@
 
 $headerHeight : 9rem;
 
+#header nav{
+	float:right;
+	line-height: $headerHeight;
+}
+
 #headerbacking{
 	opacity: 0;
 }
@@ -14,8 +19,6 @@ $headerHeight : 9rem;
 #hero-text{
 	max-width: 800px;
 	position: relative !important;
-	// z-index:10000;
-	// top:-2rem;
 	text-shadow: 1px 1px 1px black;
 	margin-bottom:2rem !important;
 }
@@ -53,12 +56,8 @@ $headerHeight : 9rem;
 }
 
 .explore form{
-	// position: relative;
-	// top:-2rem;
-	// 
 	margin-bottom: 3rem;
 	position: relative;
-	// z-index: 1;
 }
 .explore input{
 	height: 3.0rem;
@@ -72,47 +71,7 @@ $headerHeight : 9rem;
 	min-width: 100%;
 	position: absolute;
 	z-index: 0;
-	// background: red;
-	img{
-		// min-height: 100vh;
-		// min-width: 100%;
-	}
 }
-
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  // min-height: 100vh;
-  // min-width: 100%;
-  padding: 0;
-  margin: 0;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-//  min-height: 100vh;
-	min-width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  min-width: 100%;
-  min-height: 100vh;
-  border: 0;
-  }
 
 
 
@@ -144,17 +103,6 @@ $headerHeight : 9rem;
 	#name-and-slogan{
 		display: inline-block;
 	}
-	nav{
-		float:right;
-		line-height: $headerHeight;
-		a{
-			color:white;
-			font-weight: 100;
-			font-size: 90%;
-			padding-right: .5rem;
-			text-shadow: 1px 1px 1px black;
-		}
-	}
 
 	#header-region{
 			padding-top: $headerHeight;
@@ -182,35 +130,4 @@ $headerHeight : 9rem;
 	}
 }
 
-.front #header{
-	min-height: 60vh;
-	// min-height: 30rem;
-	.explore{
-		display: inline-block;
-	}
-}
 
-#menu-toggle{
-	right: $padding;
-	position: absolute;
-	z-index: 2007;
-
-	@if $responsive {
-    @include media($desktop) {
-      display: none;
-    }
-    @include media($tablet) {
-    	top:3.5rem;
-    }
-    @include media($mobile){
-    	top:1.5rem;
-    }
-  }
-}
-#menu-toggle.active{
-	position: fixed;
-}
-
-.explore{
-	display: none;
-}
