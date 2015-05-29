@@ -2,6 +2,13 @@
 
 // Form override for theme settings
 function basic_form_system_theme_settings_alter(&$form, $form_state) {
+  $file = file_save_upload('background_image1');
+  $file->status = FILE_STATUS_PERMANENT;
+  $file2 = file_save_upload('background_image2');
+  $file2->status = FILE_STATUS_PERMANENT;
+  $file3 = file_save_upload('background_image3');
+  $file3->status = FILE_STATUS_PERMANENT;
+  
   $form['options_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Theme Specific Settings'),
