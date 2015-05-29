@@ -134,19 +134,12 @@ $headerHeight : 9rem;
 	color:white;
 	background-position: center center;
 	background-size:cover;
-	background: 
-		/*linear-gradient(
-	      rgba(0, 0, 0, 0.35), 
-	      rgba(50, 60, 20, 0.05)
-	    ),*/
-	    linear-gradient(
-	      rgba(0, 0, 0,.2), 
-	      rgba(0, 0, 0, .4)
-	    ),
-	    /*url("http://famouswonders.com/wp-content/uploads/2009/03/forum_romanum_rom.jpg"),*/
-	    // url("https://photos-5.dropbox.com/t/2/AADDo7x3vI8MFIdCSZi153oYV4YkLXL4Fn3YZuZZG3NPLA/12/291310503/jpeg/32x32/3/_/1/2/forest-landscape-mountains-4019.jpeg/CKeX9IoBIAEgAiADKAEoAg/C3PrOKS9iCxL9n0RsQqh7_RBU0xgI3xWwzVDgJ2dk2E?size=1280x960"),
-	    url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg"),
-		url("https://photos-3.dropbox.com/t/2/AACL0DK6LBdxrObOfOMEyB3b7w8ys3dHs9PdkLJ8Q_P7_w/12/291310503/jpeg/32x32/3/_/1/2/evening-forest-landscape-397.jpg/CKeX9IoBIAEgAiADKAEoAg/HWNUb16wkDlWf6yKu0uJI349kkGqwXNi4subOah9kqM?size=1280x960");
+	// background: 
+	//     linear-gradient(
+	//       rgba(0, 0, 0,.2), 
+	//       rgba(0, 0, 0, .4)
+	//     ),
+	//     url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg");
 	
 	#name-and-slogan{
 		display: inline-block;
