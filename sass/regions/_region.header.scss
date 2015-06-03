@@ -2,18 +2,13 @@
 
 $headerHeight : 9rem;
 
-#header nav{
-	float:right;
-	line-height: $headerHeight;
+#logo{
+	position: relative;
+	z-index: 1;
 }
 
 #headerbacking{
 	opacity: 0;
-}
-
-.explore h1#hero-header{
-	margin-bottom: 2.5rem;
-	margin-top:2rem;
 }
 
 #hero-text{
@@ -23,21 +18,6 @@ $headerHeight : 9rem;
 	margin-bottom:2rem !important;
 }
 
-@media screen and (max-width: 480px){
-	.explore h1#hero-header{
-		font-size: 2rem;
-	}
-}
-
-.front header#header{
-	background:none !important;
-}
-
-.hero-slider{
-	z-index:-1 !important;
-
-}
-
 #leaderImage{
 	max-width: 100%;
 	margin-top:4rem;
@@ -45,37 +25,36 @@ $headerHeight : 9rem;
 	position: relative;
 }
 
-#logo{
-	position: relative;
-	z-index: 1;
-}
-
-.front #header{
-	min-height: 40vh;
-	max-height: initial;
-}
-
-.explore form{
-	margin-bottom: 3rem;
-	position: relative;
-}
-.explore input{
-	height: 3.0rem;
-	line-height: 3.0rem;
-	padding: 0 1.75rem;
-}
-
-
 .hero-slider{
 	min-height: 100%;
 	min-width: 100%;
 	position: absolute;
 	z-index: 0;
+	z-index:-1 !important;
 }
 
+.explore{
+	display:none;
+	form{
+		margin-bottom: 3rem;
+		position: relative;
+	}
+	input{
+		height: 3.0rem;
+		line-height: 3.0rem;
+		padding: 0 1.75rem;
+	}
+	h1#hero-header{
+		margin-bottom: 2.5rem;
+		margin-top:2rem;
+	}
 
-
-
+	@media screen and (max-width: 480px){
+		h1#hero-header{
+			font-size: 2rem;
+		}
+	}
+}
 
 #header{
 	overflow: hidden;
@@ -99,6 +78,10 @@ $headerHeight : 9rem;
 	//       rgba(0, 0, 0, .4)
 	//     ),
 	//     url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg");
+	nav{
+		float:right;
+		line-height: $headerHeight;
+	}
 	
 	#name-and-slogan{
 		display: inline-block;
