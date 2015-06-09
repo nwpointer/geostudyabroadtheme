@@ -72,12 +72,12 @@ $headerHeight : 9rem;
 	color:white;
 	background-position: center center;
 	background-size:cover;
-	// background: 
-	//     linear-gradient(
-	//       rgba(0, 0, 0,.2), 
-	//       rgba(0, 0, 0, .4)
-	//     ),
-	//     url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg");
+	background: 
+	    linear-gradient(
+	      rgba(0, 0, 0,.2), 
+	      rgba(0, 0, 0, .4)
+	    ),
+	    url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg");
 	nav{
 		float:right;
 		line-height: $headerHeight;

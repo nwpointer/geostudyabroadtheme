@@ -10,20 +10,21 @@
   <header id="header">
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
-
+      <?php $heroimages =array(
+        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884289/GEO_Study_Abroad_UO_w0x7xp.jpg",
+        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
+        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
+      )?>
       <?php $num = rand(1,3); $selector = 'background_image' . $num; ?>
           <ul class="rslides">
-            
-            <?php if (theme_get_setting($selector)): ?>
               <li>
                 <?php 
-                  $fid = theme_get_setting($selector);
-                  $image_url = file_create_url(file_load($fid)->uri);
-                  print ("<img src=". $image_url . "></img>");
+                  // $fid = theme_get_setting($selector);
+                  // $image_url = file_create_url(file_load($fid)->uri);
+                  // print ("<img src=". $image_url . "></img>");
+                  print ("<img src=". $heroimages[$num] . "></img>");
                 ?>
               </li>
-            <?php endif; ?> 
-            
           </ul>
     </div>
     <?php endif; ?>
@@ -32,6 +33,7 @@
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <?php $logo = "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884317/GEO_horizontal_White_sv6yqj.png" ?>
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
         </a>
       <?php endif; ?>
