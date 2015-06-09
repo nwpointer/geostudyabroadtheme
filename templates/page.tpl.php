@@ -15,7 +15,7 @@
         "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
         "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
       )?>
-      <?php $num = rand(1,3); $selector = 'background_image' . $num; ?>
+      <?php $num = rand(0,2); $selector = 'background_image' . $num; ?>
           <ul class="rslides">
               <li>
                 <?php 
