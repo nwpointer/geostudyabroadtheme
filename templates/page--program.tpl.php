@@ -13,9 +13,12 @@
 
     <div class="container">
       <?php $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/'; ?>
+      
+      
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-           <?php $logo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="geologo">
+          <?php $geologo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
+          <img src="/sites/all/themes/basic/images/GEO_horizontal_White_sv6yqj.png" alt="Home">
         </a>
       <?php endif; ?>
 
