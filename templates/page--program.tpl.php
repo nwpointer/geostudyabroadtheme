@@ -12,9 +12,10 @@
   <header id="header" style="background: url(<?php echo("'". file_create_url($backgroundsrc) . "'"); ?>);background-position: center center;background-size:cover;">
 
     <div class="container">
+      <?php $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/'; ?>
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+           <?php $logo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
         </a>
       <?php endif; ?>
 
