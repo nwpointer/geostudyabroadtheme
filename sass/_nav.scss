@@ -6,9 +6,9 @@ nav #primary{
 	a{
 		color:white;
 		font-weight: 100;
-		font-size: 90%;
 		padding-right: .5rem;
 		text-shadow: 1px 1px 1px black;
+		font-family: $sans;
 	}
 	@if responsive {
 		@include media($tablet) {

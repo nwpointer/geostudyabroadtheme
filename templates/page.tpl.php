@@ -10,19 +10,34 @@
   <header id="header">
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
-      <?php $heroimages =array(
-        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884289/GEO_Study_Abroad_UO_w0x7xp.jpg",
-        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
-        "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
-      )?>
-      <?php $num = rand(0,2); $selector = 'background_image' . $num; ?>
+      <?php 
+        // $heroimages =array(
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884289/GEO_Study_Abroad_UO_w0x7xp.jpg",
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
+        // )
+      ?>
+
+      <?php 
+        $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/';
+        $heroimagesfolder = $themeimages . "hero/";
+        $num = rand(0,2);
+        $heroimages =array(
+          "GEO_Study_Abroad_UO_w0x7xp.jpg",
+          "GEO_Study_Abroad_seville_vjkzgg.jpg",
+          "GEO_Study_Abroad_ufnjpn.jpg"
+        );
+        $randomImage = $heroimagesfolder . $heroimages[$num];
+      ?>
+
+      <?php  $selector = 'background_image' . $num; ?>
           <ul class="rslides">
               <li>
                 <?php 
                   // $fid = theme_get_setting($selector);
                   // $image_url = file_create_url(file_load($fid)->uri);
                   // print ("<img src=". $image_url . "></img>");
-                  print ("<img src=". $heroimages[$num] . "></img>");
+                  print ("<img src=". $randomImage . "></img>");
                 ?>
               </li>
           </ul>
@@ -33,7 +48,7 @@
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <?php $logo = "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884317/GEO_horizontal_White_sv6yqj.png" ?>
+          <?php $logo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
         </a>
       <?php endif; ?>

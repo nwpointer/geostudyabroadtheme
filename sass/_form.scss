@@ -32,7 +32,7 @@ label, a.button{
 	font-weight: 100;
 }
 input[type='submit'], button.lg, a.button{
-	background: #8AB24F;
+	background: $primary-button-color;
 	line-height: .825rem;
 	padding:0 2.75rem;
 	color:white;
