@@ -1,0 +1,47 @@
+.scholarship-view{
+	@include outer-container;
+	.listitem{
+		width: 32%;
+  		display: inline-block;
+  		overflow: hidden;
+  		margin: 0.25%;
+  		padding:2rem 1rem;
+  		border:1px solid rgba(0,0,0,.1);
+  		height: 290px;
+  		&:hover{
+  			box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+  		}
+  		
+  		.views-field-title a{
+        display: inline-block;
+        width: 100%;
+  			border-bottom: .5rem solid rgb(13, 144, 54) !important;
+        padding-bottom:.5rem;
+        min-height: 64px;
+  		}
+
+  		a{
+  			margin-bottom: .5rem;
+  			display: inline-block;
+  			text-decoration: none;
+  		}
+
+  		p{
+  			max-height: 72px;
+  			overflow: ellipsis;
+  			font-size: .85rem;
+  		}
+	}
+}
+
+@media screen and (max-width: 900px){
+  .scholarship-view .listitem{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .scholarship-view .listitem{
+    width: 100%;
+  }
+}

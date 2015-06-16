@@ -1,18 +1,41 @@
 @import '../_config';
+@import '_config';
+
 #sidebar-second{
   font-size: 85%;
-  padding-top: $gutter*1;
-  padding-left: $gutter*1;
-  padding-right: $gutter*1;
+  padding: $gutter*1;
 
-  background-color: $light-grey; 
+  // background-color: rgba(240, 240, 240, .50) !important; 
   @include media($tablet) {
     padding-left: 0px;
   }
   h2{
-  	margin-bottom: .5rem;
+  	font-size: 1.15rem;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+    margin-bottom: .15rem;
+    margin-top: .5rem;
   }
   .block-fieldblock:not(:first-child) h2{
-  	margin-top:1rem;
+  	margin-top: .5rem;
+  }
+
+  .field-name-field-discipline, .field-name-field-tags, .field-name-field-term {
+    .field-item{
+      display: inline-block;
+      a{padding-right:.75rem}
+    }
+  }
+
+  .block-fieldblock{
+    background-color: rgba(240,240,240,0.5);
+    padding: $gutter*0.25 $gutter*0.75;
+  }
+
+  #block-fieldblock-0b97de2961ee9f0f7a03a18fccde780e,
+  #block-fieldblock-2586de2e92859be547d21a8bdb9bcf2d{
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 20px;
   }
 }

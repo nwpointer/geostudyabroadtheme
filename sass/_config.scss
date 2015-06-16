@@ -19,6 +19,7 @@
 // Import variables and mixins to be used (Bourbon)
 @import "components/bourbon/bourbon";
 @import "components/neat/neat-helpers";
+@import "_variables";
 
 // Bourbon grid display. Comment out to remove display.
 $visual-grid: false;
