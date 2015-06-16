@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
 
 
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
