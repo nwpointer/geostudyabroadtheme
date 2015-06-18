@@ -388,14 +388,14 @@
 
 
 jQuery(document).ready(function() {
-  jQuery("img").unveil();
+  // jQuery("img").unveil();
   
-  function meow(){
-    jQuery("img").unveil();
-    console.log('hi');
-  }
+  // function meow(){
+  //   jQuery("img").unveil();
+  //   console.log('hi');
+  // }
 
-  setTimeout(meow, 3000);
+  // setTimeout(meow, 3000);
 
 });
 
