@@ -1,4 +1,4 @@
-<p>Several scholarships, grants, and free reductions are available to University of Oregon</p>
+<!-- <p>Several scholarships, grants, and free reductions are available to University of Oregon</p>
 
 <br>
 
@@ -75,4 +75,4 @@
 </li>
 
 
-</ul>
+</ul> -->
