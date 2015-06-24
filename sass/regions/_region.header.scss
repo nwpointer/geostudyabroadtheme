@@ -45,7 +45,7 @@ $headerHeight : 9rem;
 		padding: 0 1.75rem;
 	}
 	h1#hero-header{
-		margin-bottom: 2.5rem;
+		margin-bottom: 2rem;
 		margin-top:2rem;
 	}
 
@@ -72,12 +72,12 @@ $headerHeight : 9rem;
 	color:white;
 	background-position: center center;
 	background-size:cover;
-	// background: 
-	//     linear-gradient(
-	//       rgba(0, 0, 0,.2), 
-	//       rgba(0, 0, 0, .4)
-	//     ),
-	//     url("http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Trevi_Pano.jpg/1920px-Trevi_Pano.jpg");
+	background: 
+	    linear-gradient(
+	      rgba(0, 0, 0,.2), 
+	      rgba(0, 0, 0, .4)
+	    ),
+	    url("/sites/all/themes/basic/images/Trevi.jpg");
 	nav{
 		float:right;
 		line-height: $headerHeight;
@@ -94,7 +94,7 @@ $headerHeight : 9rem;
 	h1{
 		color: rgb(255, 255, 255);
 		display: inline-block;
-		font-family: 'nixie one';
+		font-family: $serif;
 		font-weight: 100;
 		position: relative;
 		text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;

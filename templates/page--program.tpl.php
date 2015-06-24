@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <!-- ______________________ HEADER _______________________ -->
@@ -12,9 +12,13 @@
   <header id="header" style="background: url(<?php echo("'". file_create_url($backgroundsrc) . "'"); ?>);background-position: center center;background-size:cover;">
 
     <div class="container">
+      <?php $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/'; ?>
+      
+      
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="geologo">
+          <?php $geologo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
+          <img src="/sites/all/themes/basic/images/GEO_horizontal_White_sv6yqj.png" alt="Home">
         </a>
       <?php endif; ?>
 
@@ -298,3 +302,5 @@ jQuery("#secondary-menu").toggle();});
           toggler.set('state', e.detail);
       });
       </script>
+
+

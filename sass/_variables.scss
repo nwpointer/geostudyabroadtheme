@@ -14,7 +14,7 @@
 
 // Colour variables
 $grey: #ccc;
-$light_grey: lighten($grey, 20%);
+$light_grey: #f0f0f0;
 $dark_grey: darken($grey, 20%);
 
 $highlight: #fed201;
@@ -26,3 +26,7 @@ $margin: $gutter;
 $padding: $gutter;
 
 $headerSans: "Open sans";
+$sans: helvetica, Arial, sans-serif;
+$serif: Garamond, Georgia, serif;
+
+$primary-button-color: #69a620;

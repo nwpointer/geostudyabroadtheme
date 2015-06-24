@@ -1,0 +1,27 @@
+.node-type-program{
+	.node-staff{
+		height: 70px;
+		h2{
+			position: relative;
+			top:22px;
+			left: 86px;
+		}
+		.content{
+			width:70px;
+			height: 70px;
+			position: relative;
+			top:-25px;
+		}
+		.field-type-image{
+			.field-item{
+				border-radius: 70px;
+				overflow: hidden;
+			}
+
+			img{
+				width:70px;
+				height: 70px;
+			}
+		}	
+	}
+}

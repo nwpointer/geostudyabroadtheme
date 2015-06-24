@@ -34,7 +34,11 @@ function hideGraduats($){
 
 (function ($, Drupal, window, document, undefined) {
 
+
+
 	$(function(){
+
+		// $("img").unveil();
 
 		filterPriceTable($);
 		hideGraduats($);

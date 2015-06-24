@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
 
 
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
@@ -10,20 +10,36 @@
   <header id="header">
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
+      <?php 
+        // $heroimages =array(
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884289/GEO_Study_Abroad_UO_w0x7xp.jpg",
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
+        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
+        // )
+      ?>
 
-      <?php $num = rand(1,3); $selector = 'background_image' . $num; ?>
+      <?php 
+        $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/';
+        $heroimagesfolder = $themeimages . "hero/";
+        $num = rand(0,2);
+        $heroimages =array(
+          "GEO_Study_Abroad_UO_w0x7xp.jpg",
+          "GEO_Study_Abroad_seville_vjkzgg.jpg",
+          "GEO_Study_Abroad_ufnjpn.jpg"
+        );
+        $randomImage = $heroimagesfolder . $heroimages[$num];
+      ?>
+
+      <?php  $selector = 'background_image' . $num; ?>
           <ul class="rslides">
-            
-            <?php if (theme_get_setting($selector)): ?>
               <li>
                 <?php 
-                  $fid = theme_get_setting($selector);
-                  $image_url = file_create_url(file_load($fid)->uri);
-                  print ("<img src=". $image_url . "></img>");
+                  // $fid = theme_get_setting($selector);
+                  // $image_url = file_create_url(file_load($fid)->uri);
+                  // print ("<img src=". $image_url . "></img>");
+                  print ("<img src=". $randomImage . "></img>");
                 ?>
               </li>
-            <?php endif; ?> 
-            
           </ul>
     </div>
     <?php endif; ?>
@@ -32,7 +48,8 @@
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+          <?php $logo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
+          <img src="/sites/all/themes/basic/images/GEO_horizontal_White_sv6yqj.png" alt="Home">
         </a>
       <?php endif; ?>
 
@@ -321,3 +338,65 @@
           toggler.set('state', e.detail);
       });
       </script>
+<script>
+  ;(function($) {
+
+  $.fn.unveil = function(threshold, callback) {
+
+    var $w = $(window),
+        th = threshold || 0,
+        retina = window.devicePixelRatio > 1,
+        attrib = retina? "data-src-retina" : "data-src",
+        images = this,
+        loaded;
+
+    this.one("unveil", function() {
+      var source = this.getAttribute(attrib);
+      source = source || this.getAttribute("data-src");
+      if (source) {
+        this.setAttribute("src", source);
+        if (typeof callback === "function") callback.call(this);
+      }
+    });
+
+    function unveil() {
+      var inview = images.filter(function() {
+        var $e = $(this);
+        if ($e.is(":hidden")) return;
+
+        var wt = $w.scrollTop(),
+            wb = wt + $w.height(),
+            et = $e.offset().top,
+            eb = et + $e.height();
+
+        return eb >= wt - th && et <= wb + th;
+      });
+
+      loaded = inview.trigger("unveil");
+      images = images.not(loaded);
+    }
+
+    $w.on("scroll.unveil resize.unveil lookup.unveil", unveil);
+
+    unveil();
+
+    return this;
+
+  };
+
+})(window.jQuery || window.Zepto);
+
+
+jQuery(document).ready(function() {
+  jQuery("img").unveil();
+  
+  function meow(){
+    jQuery("img").unveil();
+    console.log('hi');
+  }
+
+  setTimeout(meow, 3000);
+
+});
+
+</script>

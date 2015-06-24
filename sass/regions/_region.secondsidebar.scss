@@ -1,15 +1,51 @@
 @import '../_config';
+@import '_config';
+
 #sidebar-second{
   font-size: 85%;
-  padding-top: $gutter*3;
-  padding-left: $gutter*2;
+  padding: $gutter*1;
+
+  // background-color: rgba(240, 240, 240, .50) !important; 
   @include media($tablet) {
     padding-left: 0px;
   }
   h2{
-  	margin-bottom: .5rem;
+  	font-size: 1.15rem;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+    margin-bottom: .15rem;
+    margin-top: .5rem;
   }
   .block-fieldblock:not(:first-child) h2{
-  	margin-top:1rem;
+  	margin-top: .5rem;
+  }
+
+  .field-name-field-discipline, .field-name-field-tags, .field-name-field-term {
+    .field-item{
+      display: inline-block;
+      a{padding-right:.75rem}
+    }
+  }
+
+  .block-fieldblock{
+    background-color: rgba(240,240,240,0.5);
+    padding: $gutter*0.25 $gutter*0.75;
+  }
+
+  #block-fieldblock-0b97de2961ee9f0f7a03a18fccde780e,
+  #block-fieldblock-9d343bd49e19b7fdac8d5816cdb7370a,
+  #block-fieldblock-521a237ee1de44c661d58e77ad020c08{
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  #block-fieldblock-97b07f55dd06abece5c064ce2b2229db{
+    padding-top:15px;
+  }
+
+  #block-fieldblock-e422f7a5705f27b23285817101cc1714{
+    padding-bottom:15px;
+    margin-bottom: 1.5rem;
   }
 }

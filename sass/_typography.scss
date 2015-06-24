@@ -1,5 +1,6 @@
 @import 'components/modular-scale/_modular-scale';
 @import "_config";
+@import "_font";
 
 body {
   margin: 0;
@@ -48,7 +49,8 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-weight: 300;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
+  margin-top:0.75em;
 }
 
 h3 {
@@ -75,6 +77,14 @@ h6 {
 // Paragraph styles.
 p {
   margin: 0 0 1em 0;
+}
+
+table{
+  margin-bottom: 2rem;
+}
+
+.content .field-items li{
+  margin-left: 1.5rem !important;
 }
 
 
