@@ -1,10 +1,5 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<<<<<<< HEAD
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
-=======
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
-
->>>>>>> 28f58781bd4b1171d7d611ad362f5727465633e8
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <!-- ______________________ HEADER _______________________ -->
