@@ -5,6 +5,13 @@
   font-size: 85%;
   padding: $gutter*1;
 
+  #favorite-toggle{
+    margin-bottom: 1rem;
+  }
+
+
+
+
   // background-color: rgba(240, 240, 240, .50) !important; 
   @include media($tablet) {
     padding-left: 0px;
@@ -30,6 +37,10 @@
   .block-fieldblock{
     background-color: rgba(240,240,240,0.5);
     padding: $gutter*0.25 $gutter*0.75;
+  }
+
+  #block-fieldblock-0b97de2961ee9f0f7a03a18fccde780e h2{
+    margin-top:-.5rem;
   }
 
   #block-fieldblock-0b97de2961ee9f0f7a03a18fccde780e,
