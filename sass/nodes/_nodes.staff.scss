@@ -1,5 +1,5 @@
 .node-type-program{
-	.node-staff{
+	.node-staff, .node-geo-centers{
 		height: 70px;
 		h2{
 			position: relative;
@@ -16,6 +16,7 @@
 			.field-item{
 				border-radius: 70px;
 				overflow: hidden;
+				height:70px;
 			}
 
 			img{
