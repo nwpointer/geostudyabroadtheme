@@ -159,9 +159,6 @@
               $country = $node->field_country['und'][0]['taxonomy_term']->name ;
               print "<li><span><a href='/programs/search/". $country ."'>". $country . "</a></span></li>"; 
             }
-            else{
-            print("<li><span><a>". drupal_get_title() . "</a></span></li>");
-          }
           }
           else{
             print("<li><span><a>". drupal_get_title() . "</a></span></li>");
