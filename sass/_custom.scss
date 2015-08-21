@@ -26,6 +26,24 @@
 @import "_nav";
 @import "_rslides.scss";
 
+
+.views-field-field-image-scholarships img{
+	max-width: 100%;
+	height: auto !important;
+}
+
+.field-name-field-additional-content-header,
+.field-name-field-primary-scholarships .view-header{
+	font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    margin-top: 0.75em;
+
+    margin-top: 3rem;
+    background-color: rgba(254, 210, 1, 0.6);
+    padding: 1rem;
+}
+
 .user-picture{
 	display: none;
 }
