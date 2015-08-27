@@ -26,6 +26,10 @@
 @import "_nav";
 @import "_rslides.scss";
 
+.node-type-scholarship-page .block-title{
+	display:none;
+}
+
 
 .views-field-field-image-scholarships img{
 	max-width: 100%;
