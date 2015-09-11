@@ -26,10 +26,52 @@
 @import "_nav";
 @import "_rslides.scss";
 
+.card{
+	table{
+		border-collapse: separate;
+	    border-spacing: 1rem;
+	    position: relative;
+	    left: -1rem;
+	    table-layout: fixed;
+	    width: calc(100% + 2rem);
+	}
+
+	td{
+		border: 1px solid #E0E0E0;
+		padding: 1rem;
+		vertical-align:top;
+		font-size: .85rem;
+		&:hover{
+			box-shadow: 1px 1px 10px #E2E2E2;
+		}
+		.views-field-field-image-scholarships{
+			width: calc(100% + 2rem);
+		    position: relative;
+		    top: -1rem;
+		    right: 1rem;
+		    margin-bottom: -1rem;
+		    img{width:100%}
+		}
+	}
+
+	.views-field-title{
+		display: inline-block;
+		position:relative;
+	    width: 100%;
+	    border-bottom: 0.5rem solid #0d9036 !important;
+	    padding-bottom: .5rem;
+	    min-height: 64px;
+	    MARGIN-BOTTOM: .5REM;
+	    .field-content{
+	    	position: absolute;
+	    	    bottom: .5rem;
+	    }
+	}
+}
+
 .node-type-scholarship-page .block-title{
 	display:none;
 }
-
 
 .views-field-field-image-scholarships img{
 	max-width: 100%;
@@ -37,7 +79,9 @@
 }
 
 .field-name-field-additional-content-header,
-.field-name-field-primary-scholarships .view-header{
+.field-name-field-primary-scholarships .view-header,
+#block-menu-menu-scholarship-links li,
+#block-menu-menu-scholarships-links li{
 	font-size: 1.8em;
     font-weight: 300;
     margin-bottom: 0.5em;
@@ -46,6 +90,15 @@
     margin-top: 3rem;
     background-color: rgba(254, 210, 1, 0.6);
     padding: 1rem;
+}
+
+.field-name-field-scholarship-links{margin-top: 2rem;}
+
+#block-menu-menu-scholarship-links .content li,
+#block-menu-menu-scholarships-links .content li{
+	    margin-top: 1.5rem;
+	    margin-left: -1.25rem !important;
+	    list-style: none;
 }
 
 .user-picture{
@@ -229,8 +282,8 @@ html, body .front{
 .view-scholarships-for-uo-students-, .view-uo-departmental-scholarships, .view-display-id-block{
   td{
 	  padding-bottom: 1rem;
-	  padding-top: 2rem;
-	  padding-right: 1.25rem;
+	  //padding-top: 2rem;
+	  //padding-right: 1.25rem;
   }
 }
 
