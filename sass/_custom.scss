@@ -26,6 +26,49 @@
 @import "_nav";
 @import "_rslides.scss";
 
+#favorites-list{
+	padding: 0 16px;
+	position:relative;
+
+	ul{
+		color:#969696;
+		list-style: none;
+		li{
+			line-height: 1rem;
+			margin-bottom: .75rem;
+		}
+		i{
+			color: white;
+   			margin-left: .75rem;
+		}
+		i:hover{
+			color: red;
+		}
+	}
+	#list{
+		display: inline-block;
+  		width: 50%;
+  			}
+  	#list:nth-child(2){
+  		position: absolute;
+  		top:0px;
+
+  	}
+}
+
+@media (max-width: 600px){
+	#favorites-list #list{
+		width: 100%;
+		position:relative;
+	}
+
+	#favorites-list #list:nth-child(2){
+  		position: relative;
+  		top:18px;
+
+  	}
+}
+
 .card{
 	table{
 		border-collapse: separate;

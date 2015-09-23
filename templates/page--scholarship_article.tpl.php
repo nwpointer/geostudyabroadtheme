@@ -217,7 +217,7 @@
 
       <?php if ($page['sidebar_second']): ?>
         <aside id="sidebar-second" class="column sidebar second">
-        <div id="favorite-toggle" style="width:100%"></div>
+        <div id="favorite-toggle" style="width:100%; display:inline-block"></div>
           <?php print render($page['sidebar_second']); ?>
         </aside>
       <?php endif; ?> <!-- /sidebar-second -->
@@ -236,69 +236,6 @@
 
 </div> <!-- /page -->
 
-<script>
-  ;(function($) {
-
-  $.fn.unveil = function(threshold, callback) {
-
-    var $w = $(window),
-        th = threshold || 0,
-        retina = window.devicePixelRatio > 1,
-        attrib = retina? "data-src-retina" : "data-src",
-        images = this,
-        loaded;
-
-    this.one("unveil", function() {
-      var source = this.getAttribute(attrib);
-      source = source || this.getAttribute("data-src");
-      if (source) {
-        this.setAttribute("src", source);
-        if (typeof callback === "function") callback.call(this);
-      }
-    });
-
-    function unveil() {
-      var inview = images.filter(function() {
-        var $e = $(this);
-        if ($e.is(":hidden")) return;
-
-        var wt = $w.scrollTop(),
-            wb = wt + $w.height(),
-            et = $e.offset().top,
-            eb = et + $e.height();
-
-        return eb >= wt - th && et <= wb + th;
-      });
-
-      loaded = inview.trigger("unveil");
-      images = images.not(loaded);
-    }
-
-    $w.on("scroll.unveil resize.unveil lookup.unveil", unveil);
-
-    unveil();
-
-    return this;
-
-  };
-
-})(window.jQuery || window.Zepto);
-
-
-jQuery(document).ready(function() {
-  jQuery("img").unveil();
-  
-  function meow(){
-    jQuery("img").unveil();
-    console.log('hi');
-  }
-
-  setTimeout(meow, 3000);
-
-});
-
-</script>
-
 <script src="/sites/all/themes/basic/js/favorites/node_modules/react/dist/react.js" ></script>
 <script src="/sites/all/themes/basic/js/favorites/node_modules/react/dist/JSXTransformer.js" ></script>
 <script src="/sites/all/themes/basic/js/favorites/FavoritesStore.js" ></script>
@@ -307,10 +244,10 @@ jQuery(document).ready(function() {
 <script type="text/jsx">
     // RENDER REACT COMPONENTS
 
-    // React.render(
-    //   <Favoriter type="programs" title={jQuery(".title").text()} link={window.location.toLocaleString()}/>,
-    //   document.getElementById('favorite-toggle')
-    // )
+    React.render(
+      <Favoriter type="scholarships" title={jQuery(".title").text()} link={window.location.toLocaleString()} />,
+      document.getElementById('favorite-toggle')
+    )
 
     React.render(
       <Favorites />,
@@ -323,6 +260,3 @@ jQuery(document).ready(function() {
       jQuery("#savedProgramDisplay").slideToggle(100);
     });
 </script>
-
-
-
