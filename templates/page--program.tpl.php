@@ -2,6 +2,8 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600' rel='stylesheet' type='text/css'>
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
+<!-- test -->
+
   <!-- ______________________ HEADER _______________________ -->
 
 <?php if($node->field_header_background["und"]): ?>
