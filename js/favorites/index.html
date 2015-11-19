@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>favorites</title>
+	<script src="node_modules/react/dist/react.js" ></script>
+	<script src="node_modules/react/dist/JSXTransformer.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" ></script>
+</head>
+<body>
+	<h1>favorites</h1>
+	<div id="favorites"></div>
+	<div id="favoriter"></div>
+
+	<script src="FavoritesStore.js" ></script>
+	<script type="text/jsx" src="FavoritesComponents.js" ></script>
+
+
+	<script type="text/jsx">
+		// RENDER REACT COMPONENTS
+
+		React.render(
+			<Favoriter type="scholarships" title="git shwifty" link="http://www.google.com"/>,
+			document.getElementById('favoriter')
+		)
+
+		React.render(
+			<Favorites />,
+			document.getElementById('favorites')
+		)
+
+	</script>
+</body>
+</html>
