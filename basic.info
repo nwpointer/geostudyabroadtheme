@@ -40,12 +40,13 @@ scripts[] = js/jquery.sticky.js
 scripts[] = js/jquery.sticky-kit.min.js
 scripts[] = js/node_modules/jquery-lazyload/jquery.lazyload.js
 scripts[] = js/script.js
-scripts[] = js/ractive.js
 scripts[] = js/underscore.js
 scripts[] = js/tokenizer.js
 scripts[] = js/parser.js
 scripts[] = js/vminpoly.js
-
+scripts[] = js/favorites/node_modules/react/dist/react.js
+scripts[] = js/favorites/node_modules/react/dist/JSXTransformer.js
+scripts[] = js/favorites/FavoritesStore.js
 
 
 
