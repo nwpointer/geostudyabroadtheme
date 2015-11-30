@@ -215,7 +215,7 @@
         </aside>
       <?php endif; ?> <!-- /sidebar-first -->
 
-      <?php if ($page['sidebar_second']): ?>
+      <?php if (true): ?>
         <aside id="sidebar-second" class="column sidebar second">
         <div id="favorite-toggle" style="width:100%; display:inline-block"></div>
           <?php print render($page['sidebar_second']); ?>

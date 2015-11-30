@@ -28,15 +28,13 @@ Favorites = React.createClass({
 				return(
 					<li>
 						<a href={fav.link} >{fav.title}</a>
-						<a onClick={rm.bind(this, type, fav)}>
-							<i className="fa fa-times-circle"></i>
-						</a>
+						<button onClick={rm.bind(this, type, fav)}>x</button>
 					</li>
 				)
-			}) :  (<li>no {type} added</li>);
+			}) : 'no ' +  type + ' added';
 
 			return(
-				<div id="list">
+				<div>
 					<h4>{type}</h4>
 					<ul>
 						{list}
@@ -60,10 +58,6 @@ Favoriter = React.createClass({
 		FavoritesStore.toggleFavorite(this.props.type, {title: this.props.title, link: this.props.link});
 	},
 	render:function () {
-		return(
-			<button onClick={this.toggle} className="lg included-{state}">
-				favorite <i className={this.state.active ? 'fa fa-star fa-lg' : 'fa fa-star-o fa-lg'} />  
-			</button>
-		)
+		return(<button onClick={this.toggle}>favorite this active: {this.state.active ? "true" : "false"} </button>)
 	}
 })
