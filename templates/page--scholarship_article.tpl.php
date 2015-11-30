@@ -305,15 +305,19 @@ Favoriter = React.createClass({
 <script type="text/jsx">
     // RENDER REACT COMPONENTS
 
-    React.render(
-      <Favoriter type="scholarships" title={jQuery(".title").text()} link={window.location.toLocaleString()} />,
-      document.getElementById('favorite-toggle')
-    )
+    if(document.getElementById('favorite-toggle')){
+      React.render(
+        <Favoriter type="programs" title={jQuery(".title").text()} link={window.location.toLocaleString()}/>,
+        document.getElementById('favorite-toggle')
+      )
+    }
 
-    React.render(
-      <Favorites />,
-      document.getElementById('favorites-list')
-    )
+    if(document.getElementById('favorites-list')){
+      React.render(
+        <Favorites />,
+        document.getElementById('favorites-list')
+      )
+    }
 
     // TOGGLE FAVLIST COMPONENT
 
