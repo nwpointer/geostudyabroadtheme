@@ -10,34 +10,25 @@
   <header id="header">
     <?php if (drupal_is_front_page()): ?>
     <div class="hero-slider">
-      <?php 
-        // $heroimages =array(
-        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884289/GEO_Study_Abroad_UO_w0x7xp.jpg",
-        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_seville_vjkzgg.jpg",
-        // "http://res.cloudinary.com/uogeostudyabroad/image/upload/v1433884288/GEO_Study_Abroad_ufnjpn.jpg"
-        // )
-      ?>
-
-      <?php 
-        $themeimages = $base_path . drupal_get_path( 'theme', variable_get('theme_default', '0') ) . '/images/';
-        $heroimagesfolder = $themeimages . "hero/";
-        $num = rand(0,2);
-        $heroimages =array(
-          "GEO_Study_Abroad_UO_w0x7xp.jpg",
-          "GEO_Study_Abroad_seville_vjkzgg.jpg",
-          "GEO_Study_Abroad_ufnjpn.jpg"
-        );
-        $randomImage = $heroimagesfolder . $heroimages[$num];
-      ?>
-
-      <?php  $selector = 'background_image' . $num; ?>
           <ul class="rslides">
               <li>
-                <?php 
-                  // $fid = theme_get_setting($selector);
-                  // $image_url = file_create_url(file_load($fid)->uri);
-                  // print ("<img src=". $image_url . "></img>");
-                  print ("<img src=". $randomImage . "></img>");
+                <?php
+                  $node_type = "home_page_background_"; // can find this on the node type's "edit" screen in the Drupal admin section.
+
+                  $nodes = node_load_multiple(array(), array('type' => $node_type));
+                  // array_shift(array_values($nodes)); 
+                  $num = rand(0,sizeof($nodes)-1);
+
+                  $i = 0;
+                  foreach($nodes as $key => $value){
+                      if($i == $num){
+                         echo theme('image', array(
+                           'path' => file_create_url($value->field_homebk['und'][0]["uri"]),
+                         ));  
+                         break; #Exit blucle 
+                      }
+                      $i++;
+                  }
                 ?>
               </li>
           </ul>

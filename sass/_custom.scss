@@ -26,6 +26,18 @@
 @import "_nav";
 @import "_rslides.scss";
 
+
+#breadcrumbs{
+	display:none !important;
+}
+
+#uobannerandfooter-uoheader{
+	height:112px;
+}
+.oheader-container, .uoheader-links-container{
+	padding-top: 1.75rem;
+}
+
 #favorites-list{
 	padding: 0 16px;
 	position:relative;
@@ -171,14 +183,14 @@ ul{
 // Links
 a {
   &:link, &:visited {
-    color:$secondaryHighlight;
+    color:lighten($secondaryHighlight, 15%);
     text-decoration: none;
   }
 }
 
 a {
   &:hover, &:active {
-    color:lighten($secondaryHighlight, 10%);
+    color:lighten($secondaryHighlight, 30%);
     text-decoration: underline;
   }
 }
