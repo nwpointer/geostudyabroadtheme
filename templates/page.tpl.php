@@ -8,38 +8,33 @@
 
 
   <header id="header">
-    <?php if (drupal_is_front_page()): ?>
-    <div class="hero-slider">
-          <ul class="rslides">
-              <li>
-                <?php
-                  $node_type = "home_page_background_"; // can find this on the node type's "edit" screen in the Drupal admin section.
 
-                  $nodes = node_load_multiple(array(), array('type' => $node_type));
-                  // array_shift(array_values($nodes)); 
-                  $num = rand(0,sizeof($nodes)-1);
 
-                  $i = 0;
-                  foreach($nodes as $key => $value){
-                      if($i == $num){
-                         echo theme('image', array(
-                           'path' => file_create_url($value->field_homebk['und'][0]["uri"]),
-                         ));  
-                         break; #Exit blucle 
-                      }
-                      $i++;
-                  }
-                ?>
-              </li>
-          </ul>
-    </div>
-    <?php endif; ?>
+    <?php
+      if (drupal_is_front_page()){
+        $node_type = "home_page_background_"; // can find this on the node type's "edit" screen in the Drupal admin section.
+
+        $nodes = node_load_multiple(array(), array('type' => $node_type));
+        // array_shift(array_values($nodes)); 
+        $num = rand(0,sizeof($nodes)-1);
+
+        $i = 0;
+        foreach($nodes as $key => $value){
+            if($i == $num){
+               echo ("<div class='hero-slider' style='background-image:url(".file_create_url($value->field_homebk['und'][0]['uri']).")'></div>");
+               break; #Exit blucle 
+            }
+            $i++;
+        }
+      }
+    ?>
+
+
 
     <div class="container">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <?php $logo = $themeimages . "GEO_horizontal_White_sv6yqj.png" ?>
           <img src="/sites/all/themes/basic/images/GEO_horizontal_White_sv6yqj.png" alt="Home">
         </a>
       <?php endif; ?>

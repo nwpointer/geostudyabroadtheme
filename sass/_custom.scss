@@ -183,14 +183,14 @@ ul{
 // Links
 a {
   &:link, &:visited {
-    color:lighten($secondaryHighlight, 15%);
+    color:lighten($secondaryHighlight, 20%);
     text-decoration: none;
   }
 }
 
 a {
   &:hover, &:active {
-    color:lighten($secondaryHighlight, 30%);
+    color:lighten($secondaryHighlight, 15%);
     text-decoration: underline;
   }
 }

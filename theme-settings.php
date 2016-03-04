@@ -94,61 +94,11 @@ function basic_form_system_theme_settings_alter(&$form, $form_state) {
     '#description' =>t('During theme development, it can be very useful to continuously <a href="!link">rebuild the theme registry</a>. WARNING: this is a huge performance penalty and must be turned off on production websites.', array('!link' => 'http://drupal.org/node/173880#theme-registry')),
     '#default_value' => theme_get_setting('clear_registry'),
   );
-  $form['leader_image'] = array(
-    '#type'     => 'managed_file',
-    '#title'    => t('hero image'),
-    '#required' => FALSE,
-    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
-    '#default_value' => theme_get_setting('leader_image'), 
-    '#upload_validators' => array(
-      'file_validate_extensions' => array('gif png jpg jpeg'),
-    ),
-  );
   $form['header_text'] = array(
     '#type' => 'textarea',
     "#title" => t('hero text'),
     '#default_value' =>  theme_get_setting('header_text'),
   );
-
-  $form['background_image1'] = array(
-    '#type'     => 'managed_file',
-    '#title'    => t('slider image1'),
-    '#required' => FALSE,
-    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
-    '#default_value' => theme_get_setting('background_image1'), 
-    '#upload_validators' => array(
-      'file_validate_extensions' => array('gif png jpg jpeg'),
-    ),
-  );
-
-  $form['background_image2'] = array(
-    '#type'     => 'managed_file',
-    '#title'    => t('slider image2'),
-    '#required' => FALSE,
-    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
-    '#default_value' => theme_get_setting('background_image2'), 
-    '#upload_validators' => array(
-      'file_validate_extensions' => array('gif png jpg jpeg'),
-    ),
-  );
-
-  $form['background_image3'] = array(
-    '#type'     => 'managed_file',
-    '#title'    => t('slider image3'),
-    '#required' => FALSE,
-    '#upload_location' => file_default_scheme() . '://theme/backgrounds/',
-    '#default_value' => theme_get_setting('background_image3'), 
-    '#upload_validators' => array(
-      'file_validate_extensions' => array('gif png jpg jpeg'),
-    ),
-  );
-  
-  $file = file_save_upload('background_image1');
-  $file->status = FILE_STATUS_PERMANENT;
-  $file2 = file_save_upload('background_image2');
-  $file2->status = FILE_STATUS_PERMANENT;
-  $file3 = file_save_upload('background_image3');
-  $file3->status = FILE_STATUS_PERMANENT;
 }
 
 
